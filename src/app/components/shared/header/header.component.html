@@ -1,1 +1,64 @@
-<p>header works!</p>
+<!-- Header -->
+<div
+  class="header-top-fixed one-page-nav"
+  [ngClass]="{ 'menu-open menu-open-desk': sidebarOpen }"
+>
+  <div class="container">
+    <!-- Brand -->
+    <div class="logo">
+      <div class="header__logo-container">
+        <!--<div class="header__logo-img-cont">
+          <img src="assets\img\Me.jpeg" alt="" class="header__logo-img" />
+        </div>-->
+        <a class="navbar-brand" href="javascript:">
+          <img
+            class="logo-dark"
+            title=""
+            alt=""
+            src="assets/img/logo-light.svg"
+          />
+          <img
+            class="logo-light"
+            title=""
+            alt=""
+            src="assets/img/logo-light.svg"
+          />
+        </a>
+      </div>
+    </div>
+    <!-- / -->
+    <ul class="main-menu">
+      <li>
+        <a class="menu-item" activeClass="active" href="#home"> Home </a>
+      </li>
+      <li>
+        <a class="menu-item" activeClass="active" href="#project"> About Me </a>
+      </li>
+      <li>
+        <a class="menu-item" activeClass="active" href="#services"> Work </a>
+      </li>
+
+      <li>
+        <a class="menu-item" activeClass="active" href="#contactus">
+          Contact
+        </a>
+      </li>
+    </ul>
+    <!-- Top Menu -->
+    <div class="ms-auto d-flex" (clickOutside)="onClickedOutside($event)">
+      <!-- to scroll let's talk to Contact Page change below "href="javascript:" to " spyOn="contactus" href="#contactus" "-->
+      <a class="px-btn dark d-none d-lg-inline-flex" href="javascript:"
+        >Hire me</a
+      >
+      <button
+        class="toggler-menu d-lg-none"
+        [ngClass]="{ open: sidebarOpen }"
+        (click)="toggleMenu()"
+      >
+        <span></span>
+      </button>
+    </div>
+    <!-- / -->
+  </div>
+</div>
+<!-- End Header -->

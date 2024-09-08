@@ -1,0 +1,158 @@
+.px-btn {
+  padding: 7px 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  background-color: var(--px-theme);
+  color: var(--px-black);
+  text-decoration: none;
+  transition: ease all 0.35s;
+  font-weight: 500;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+  i {
+    margin-left: 10px;
+  }
+  &:hover {
+    color: var(--px-white);
+    background-size: 200% 100%;
+  }
+  &.dark {
+    background: var(--px-black);
+    //border: 1px solid var(--px-white);
+    color: var(--px-white);
+    &:hover {
+      background: var(--px-white);
+      color: var(--px-black);
+    }
+  }
+  &.light {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: var(--px-white);
+    &:hover {
+      background: var(--px-white);
+      color: var(--px-black);
+    }
+  }
+  &.white {
+    background: var(--px-white);
+    border: 1px solid var(--px-white);
+    color: var(--px-black);
+    &:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: var(--px-white);
+    }
+  }
+  @include down-md {
+    display: inline-flex !important;
+    border: 1px solid var(--px-white);
+    &:hover {
+      background: var(--px-white);
+      color: var(--px-black);
+    }
+  }
+}
+
+.hero_btn {
+  z-index: 20;
+  margin-top: 1px;
+  color: #111;
+  background-color: #fff;
+  border: 1px solid #d6e3e7;
+  border-radius: 100px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: auto;
+  padding: 0.53rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  &:hover {
+    background: var(--px-black);
+    color: var(--px-white);
+    border: 1px solid var(--px-black);
+  }
+  @include down-xs {
+    align-self: center;
+    width: 100%;
+    height: 45px;
+    display: flex;
+  }
+}
+
+.hero_btn_text {
+  z-index: 20;
+  position: relative;
+}
+
+.button-hover-circle {
+  z-index: 5;
+  background-color: #fff;
+  border-radius: 100%;
+  width: 125%;
+  height: 400%;
+  position: absolute;
+  top: auto;
+  bottom: -400%;
+  left: -16px;
+  right: auto;
+}
+.button {
+  width: auto;
+  height: auto;
+
+  @include down-xs {
+    width: 100%;
+    height: 45px;
+  }
+}
+
+.btn-outer {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 100vw;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: 0.1s ease;
+  @include down-xs {
+    height: 100%;
+    width: 100%;
+    display: block;
+  }
+}
+
+.btn-inner {
+  color: #fff;
+  background-color: rgba(247, 247, 247, 0.1);
+  border-radius: 100vw;
+  padding: 0.63rem 1.25rem;
+  font-weight: 700;
+  position: relative;
+  overflow: hidden;
+
+  @include down-xs {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    display: flex;
+  }
+}
+.btn-text {
+  z-index: 1;
+  font-size: 1rem;
+  font-weight: 400;
+  position: relative;
+}
+
+.btn-outer:hover {
+  border: 1px solid rgba(209, 209, 209, 0.8);
+}

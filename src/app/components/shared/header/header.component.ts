@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
+public sidebarOpen: boolean = false;
+  public currentSection = 'home';
+  
+  constructor(
+  ) {}
 
+  toggleMenu(){
+    this.sidebarOpen = !this.sidebarOpen;
+  }
+
+  onClickedOutside(e: Event) {
+    if(this.sidebarOpen)
+      this.sidebarOpen = false;
+  }
 }
