@@ -1,7 +1,7 @@
 <main class="main-wrapper">
   <header id="home" class="home-section">
     <div class="hero_con_main">
-      <div class="hero_con_wrapper">
+      <div class="hero_con_wrapper" [ngStyle]="heroWrapperStyles">
         <div class="container-hero">
           <div class="padding-vertical_hero" style="height: 100%">
             <div class="w-layout-grid hero_grid">
@@ -84,6 +84,17 @@
       alt="Spatial bg"
       sizes="100vw"
       class="image-4"
+      [ngStyle]="imageStyles"
     />
   </header>
 </main>
+<a href="#home" id="return-to-top"
+  ><i class="fa-solid fa-circle-arrow-up"></i
+></a>
+
+<section class="section">
+  <app-projects-home></app-projects-home>
+</section>
+<section class="section">
+  <app-skill-set></app-skill-set>
+</section>
