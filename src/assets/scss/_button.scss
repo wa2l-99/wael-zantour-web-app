@@ -30,7 +30,7 @@
     }
   }
   &.light {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0);
     border: 1px solid rgba(255, 255, 255, 0.15);
     color: var(--px-white);
     &:hover {
@@ -155,4 +155,54 @@
 
 .btn-outer:hover {
   border: 1px solid rgba(209, 209, 209, 0.8);
+}
+
+.btn-project {
+  color: #fff;
+  background-color: rgba(247, 247, 247, 0.1);
+  padding: 0.63rem 1.25rem;
+  border-radius: 6px;
+  background: linear-gradient(106deg, #53525221, #23272b);
+  position: relative;
+  margin-top: 19%;
+  display: inline-block;
+  border: 0 none;
+  overflow: hidden;
+
+  @include down-md {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    display: flex;
+  }
+  @include down-sm {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    display: flex;
+  }
+  @include down-xs {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    display: flex;
+  }
+}
+
+.btn-project:hover {
+  border: 1px solid rgba(209, 209, 209, 0.8);
+}
+.btn-text-p {
+  z-index: 1;
+  font-size: 15px;
+  font-weight: 300 !important;
+  position: relative;
+  i {
+    font-size: 14px;
+  }
+}
+
+.see_all_btn .hero_btn:hover {
+  border: 1px solid var(--px-white);
+
 }

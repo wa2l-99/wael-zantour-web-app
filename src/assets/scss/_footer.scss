@@ -1,6 +1,6 @@
 .footer {
   background-color: var(--px-black);
-  padding-top: 10px;
+  padding-top: 1rem;
   padding-bottom: 10px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.51);
@@ -30,7 +30,7 @@
 }
 .social-icon {
   display: flex;
-  padding-top: 15px;
+  padding-top: 6px;
   padding-bottom: 15px;
 
   align-items: center;
@@ -73,4 +73,23 @@
   object-fit: cover;
   object-position: center;
   display: block;
+}
+.cta {
+  border: 1px solid #fff3;
+  border-radius: 1.25em;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1.75em;
+  padding-bottom: 1.75em;
+  position: relative;
+  overflow: hidden;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: inset 0 0 80px -20px #ffffff4d;
+
+  @include down-sm {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
 }
