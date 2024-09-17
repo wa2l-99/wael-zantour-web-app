@@ -56,7 +56,6 @@
   .main-menu {
     display: flex;
     list-style: none;
-    flex: 1;
     justify-content: center;
     margin: 0;
     padding: 0;
@@ -71,6 +70,20 @@
       padding: 10px 20px;
       display: none;
       box-shadow: 0 0.125rem 0.25rem rgba(55, 55, 55, 0.075);
+    }
+    .fixed-header & {
+      background-color: #111;
+      border: 1px solid #333;
+      border-radius: 100vw;
+      max-width: 100%;
+      align-items: center;
+      height: 3rem;
+      padding-left: 0.3em;
+      padding-right: 0.3em;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      box-shadow: 1px 1px 7px #00000029;
     }
     > li {
       padding: 0 20px;
@@ -88,26 +101,28 @@
         @include down-sm {
           color: var(--px-white);
         }
-        &:after {
-          content: "";
-          position: absolute;
-          left: auto;
-          right: 0;
-          bottom: 0;
-          width: 0;
-          height: 2px;
-          transition: ease all 0.35s;
-          background-color: currentColor;
-        }
-        &.active {
+        .shape-bg {
           &:after {
-            width: 100%;
-            left: 0;
-            right: auto;
+            content: "";
+            position: absolute;
+            left: auto;
+            right: 0;
+            bottom: 0;
+            width: 0;
+            transition: ease all 0.35s;
+            background-color: currentColor;
           }
-        }
-        .fixed-header & {
-          color: var(--px-white);
+          &.active {
+            &:after {
+              width: 100%;
+              left: 0;
+              right: auto;
+              z-index: 0;
+              filter: blur(18px);
+              height: 0.75rem;
+              top: 0.4em;
+            }
+          }
         }
       }
     }
@@ -163,25 +178,4 @@
   object-fit: cover;
   object-position: center;
   display: block;
-}
-
-/* ----------------------
-*  Retutn to Top Section
----------------------------*/
-#return-to-top {
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  display: block;
-  display: none;
-  z-index: 9;
-  i {
-    color: var(--px-white);
-    font-size: 40px;
-  }
-}
-.fixed-header {
-  #return-to-top {
-    display: block;
-  }
 }
