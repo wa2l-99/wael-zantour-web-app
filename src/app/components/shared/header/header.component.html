@@ -29,23 +29,35 @@
     <!-- / -->
     <ul class="main-menu">
       <li>
-        <a class="menu-item" activeClass="active" href="#home"> Home </a>
+        <a class="menu-item" routerLink="/">
+          <div
+            class="shape-bg"
+            [routerLinkActive]="'active'"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            Home
+          </div>
+        </a>
       </li>
       <li>
-        <a class="menu-item" activeClass="active" href="#project"> About Me </a>
+        <a class="menu-item" routerLink="/aboutMe">
+          <div class="shape-bg" [routerLinkActive]="'active'">About Me</div>
+        </a>
       </li>
       <li>
-        <a class="menu-item" activeClass="active" href="#services"> Work </a>
+        <a class="menu-item" routerLink="/myMainWork">
+          <div class="shape-bg" [routerLinkActive]="'active'">Work</div>
+        </a>
       </li>
 
       <li>
-        <a class="menu-item" activeClass="active" href="#contactus">
-          Contact
+        <a class="menu-item" routerLink="/contact">
+          <div class="shape-bg" [routerLinkActive]="'active'">Contact</div>
         </a>
       </li>
     </ul>
     <!-- Top Menu -->
-    <div class="ms-auto d-flex" (clickOutside)="onClickedOutside($event)">
+    <div class="d-flex" (clickOutside)="onClickedOutside($event)">
       <!-- to scroll let's talk to Contact Page change below "href="javascript:" to " spyOn="contactus" href="#contactus" "-->
       <a class="px-btn dark d-none d-lg-inline-flex" href="javascript:"
         >Hire me</a
