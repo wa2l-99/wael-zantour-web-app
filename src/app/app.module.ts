@@ -24,7 +24,6 @@ import { ScrollTopComponent } from './components/scroll-top/scroll-top.component
 import { MainWorkComponent } from './components/pages/work/main-work/main-work.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { ContactService } from './services/contact.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
 
@@ -57,7 +56,11 @@ import { ToastrModule } from 'ngx-toastr';
     NgbNavModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    ToastrModule.forRoot(),
+    ToastrModule.forRoot({
+      timeOut: 10000,
+      positionClass: 'toast-bottom-right',
+      preventDuplicates: true,
+    }),
   ],
   providers: [
     {
@@ -67,7 +70,6 @@ import { ToastrModule } from 'ngx-toastr';
         disableImageLazyLoadWarning: true,
       },
     },
-    ContactService,
   ],
   bootstrap: [AppComponent],
 })
