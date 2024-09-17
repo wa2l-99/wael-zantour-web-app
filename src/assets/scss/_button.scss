@@ -22,7 +22,7 @@
   }
   &.dark {
     background: var(--px-black);
-    //border: 1px solid var(--px-white);
+    border: 1px solid #333;
     color: var(--px-white);
     &:hover {
       background: var(--px-white);
@@ -43,14 +43,14 @@
     border: 1px solid var(--px-white);
     color: var(--px-black);
     &:hover {
-      background: rgba(255, 255, 255, 0.1);
+      background: rgb(0, 0, 0);
       border: 1px solid rgba(255, 255, 255, 0.15);
       color: var(--px-white);
     }
   }
   @include down-md {
     display: inline-flex !important;
-    border: 1px solid var(--px-white);
+    border: 1px solid #333;
     &:hover {
       background: var(--px-white);
       color: var(--px-black);
