@@ -204,5 +204,24 @@
 
 .see_all_btn .hero_btn:hover {
   border: 1px solid var(--px-white);
+}
 
+.msg-btn {
+  padding: 7px 24px;
+  display: inline-flex;
+  color: #464646;
+  align-items: center;
+  border: solid 1px #333;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  font-weight: 500;
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-disabled {
+  background-color: rgb(92 92 92 / 30%) !important;
+  border-radius: 100px !important;
+  cursor: not-allowed !important;
 }
