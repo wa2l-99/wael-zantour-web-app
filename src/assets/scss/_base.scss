@@ -97,19 +97,81 @@ img {
     text-transform: uppercase;
     letter-spacing: 2px;
   }
+}
+
+.section-title {
   h2 {
     margin: 0;
     font-size: 40px;
     font-family: "Degular Bold", "Degular Bold Placeholder", sans-serif;
     font-weight: 800;
-    color: var(--px-white);
-
+    background: linear-gradient(177deg, #fff 0%, rgba(255, 255, 255, 0.7) 100%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     @include down-sm {
       font-size: 35px;
     }
   }
+  p {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+  }
 }
 
+.section-separator {
+  position: relative;
+}
+
+.section-separator::after {
+  position: absolute;
+  max-width: 1270px;
+  height: 1px;
+  background: var(--px-white);
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.section-sous-title {
+  padding-bottom: 40px;
+  position: relative;
+}
+
+.section-sous-title h2 {
+  font-size: 28px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  margin: 0;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: color-mix(in srgb, #fafafa, transparent 50%);
+  position: relative;
+}
+
+.section-sous-title h2::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: var(--px-white);
+  margin: 4px 10px;
+}
+
+.section-sous-title div {
+  color: var(--px-white);
+  margin: 0;
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: var(--heading-font);
+}
 /* Modal
 -------------------------------*/
 .modal-backdrop.show {
@@ -177,4 +239,81 @@ img.border {
     padding-bottom: 12px;
     border-bottom: 1px solid #eee;
   }
+}
+/*--------------------------------------------------------------
+# Page Titles
+--------------------------------------------------------------*/
+.page-title {
+  color: var(--px-white);
+  background-color: var(--px-black);
+  position: relative;
+}
+
+.page-title .heading {
+  padding: 160px 0 80px 0;
+  border-top: 1px solid color-mix(in srgb, var(--px-white), transparent 90%);
+}
+
+.page-title .heading .text-title {
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.page-title .heading .text-title h1 {
+  font-size: 8rem;
+  font-weight: 600;
+  color: var(--px-white);
+  @include down-md {
+    font-size: 6rem;
+  }
+  @include down-sm {
+    font-size: 4rem;
+  }
+}
+
+.page-title .heading .text-title p {
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: var(--px-white);
+  line-height: 1.5;
+  margin-bottom: 0;
+  position: absolute;
+  align-self: center;
+  @include down-sm {
+    font-size: 2rem;
+  }
+}
+.page-title .heading .text-title p .heading-separator-line {
+  width: 80px;
+  border-color: var(--px-white);
+  border-width: 3px;
+  border-bottom: var(--bs-border-width) var(--bs-border-style)
+    var(--bs-border-color);
+  display: block;
+}
+.page-title nav {
+  background-color: color-mix(in srgb, var(--px-white), transparent 90%);
+  padding: 20px 0;
+}
+
+.page-title nav ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.page-title nav ol li + li {
+  padding-left: 10px;
+}
+
+.page-title nav ol li + li::before {
+  content: "/";
+  display: inline-block;
+  padding-right: 10px;
+  color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
