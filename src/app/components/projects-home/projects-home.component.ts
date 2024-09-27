@@ -14,13 +14,13 @@ export class ProjectsHomeComponent {
     private modalService: NgbModal // Injection de NgbModal
   ) {}
 
-  openReservationModal1() {
+  openModal1() {
     this.modalService.open(ProjectModal1Component);
   }
-  openReservationModal2() {
+  openModal2() {
     this.modalService.open(ProjectModal2Component);
   }
-  openReservationModal3() {
+  openModal3() {
     this.modalService.open(ProjectModal3Component);
   }
 }

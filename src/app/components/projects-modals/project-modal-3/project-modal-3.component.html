@@ -1,54 +1,58 @@
-<!-- Project1 -->
-<div class="modal-body">
+<!-- Project3 -->
+<div class="modal-header" style="border-bottom: none">
   <button
     type="button"
     class="btn-close"
-    (click)="activeModal.dismiss('Cross click')"
     aria-label="Close"
+    (click)="activeModal.dismiss('Cross click')"
   ></button>
+</div>
+<div class="modal-body">
   <div class="single-project-box">
     <div class="row align-items-start">
       <div class="col-lg-7">
         <img
           class="border"
-          src="assets/img/popup-project-1.jpg"
+          src="assets/img/gflotte-project/track-G.png"
           title=""
           alt=""
         />
       </div>
       <div class="col-lg-5 pt-4 pt-lg-0">
         <h4 class="modal-title">
-          P3-Website Design for Marketing Agency Startup
+          GFlotte – Application Web de Gestion de Flotte Automobile
         </h4>
         <p class="mb-3">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-        <p>
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-          officia deserunt mollit anim id est laborum.
+          Ce projet, réalisé dans le cadre de mon stage de fin d’études, vise à
+          développer une application web centralisée pour la gestion de flotte
+          automobile. L'objectif principal était d'automatiser la gestion des
+          véhicules, des conducteurs, des missions ainsi que des opérations
+          d'entretien et de maintenance, tout en optimisant les coûts
+          opérationnels liés à la consommation de carburant et aux entretiens
         </p>
         <div class="about-content">
           <ul>
             <li class="d-flex">
               <span class="col-4 col-lg-3">Type:</span>
-              <span>Website</span>
+              <span>Application Web de Gestion de Flotte</span>
             </li>
             <li class="d-flex">
-              <span class="col-4 col-lg-3">Langages:</span>
-              <span>PHP, HTML, CSS, JS</span>
+              <span class="col-4 col-lg-3"> Technologies:</span>
+              <span>JavaScript (Node.js, React.js), HTML5, CSS3</span>
             </li>
             <li class="d-flex">
               <span class="col-4 col-lg-3">Platform:</span>
-              <span>WordPress</span>
+              <span>Architecture MVC, Dashboard</span>
             </li>
           </ul>
         </div>
-        <button class="btn-project">
-          <div class="btn-text-p">
-            VIEW PROJECT <i class="fa fa-angle-right"></i>
-          </div>
-        </button>
+        <div class="modal-footer" style="border-top: none">
+          <button class="btn-project" (click)="redirectToProject()">
+            <div class="btn-text-p">
+              VIEW PROJECT <i class="fa fa-angle-right"></i>
+            </div>
+          </button>
+        </div>
       </div>
     </div>
   </div>
