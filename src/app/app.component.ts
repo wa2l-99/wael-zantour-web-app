@@ -9,12 +9,18 @@ import { fromEvent, Subscription, throttleTime } from 'rxjs';
 export class AppComponent implements OnInit {
   public fixedHeader: boolean = false;
   private windowScroll$: Subscription = Subscription.EMPTY;
+  loader = true;
+
   constructor() {}
 
   ngOnInit() {
     this.windowScroll$ = fromEvent(window, 'scroll')
       .pipe(throttleTime(30))
       .subscribe(() => this.onScroll());
+
+    setTimeout(() => {
+      this.loader = false;
+    }, 2000);
   }
 
   ngOnDestroy() {

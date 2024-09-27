@@ -1,4 +1,10 @@
-<section [ngClass]="{ 'fixed-header': fixedHeader }">
+<div class="spinner-wrapper">
+  <div class="spinner-border text-light" role="status" *ngIf="loader">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
+
+<section [ngClass]="{ 'fixed-header': fixedHeader }" *ngIf="!loader">
   <app-header></app-header>
   <router-outlet></router-outlet>
   <app-footer></app-footer>
