@@ -45,8 +45,8 @@
         </a>
       </li>
       <li>
-        <a class="menu-item" routerLink="/myMainWork">
-          <div class="shape-bg" [routerLinkActive]="'active'">Work</div>
+        <a class="menu-item" routerLink="/work">
+          <div class="shape-bg" [routerLinkActive]="'active'">work</div>
         </a>
       </li>
 
@@ -59,8 +59,8 @@
     <!-- Top Menu -->
     <div class="d-flex" (clickOutside)="onClickedOutside($event)">
       <!-- to scroll let's talk to Contact Page change below "href="javascript:" to " spyOn="contactus" href="#contactus" "-->
-      <a class="px-btn dark d-none d-lg-inline-flex" href="javascript:"
-        >Hire me</a
+      <a class="px-btn dark d-none d-lg-inline-flex" routerLink="/contact"
+        ><i class="available"></i>Hire me</a
       >
       <button
         class="toggler-menu d-lg-none"
