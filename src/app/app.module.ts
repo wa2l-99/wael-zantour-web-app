@@ -14,7 +14,12 @@ import { ProjectModal3Component } from './components/projects-modals/project-mod
 import { SkillSetComponent } from './components/skill-set/skill-set.component';
 import { AboutMeComponent } from './components/pages/about-me/about-me.component';
 import { IMAGE_CONFIG } from '@angular/common';
-import { NgbNavModule, NgbProgressbarModule } from '@ng-bootstrap/ng-bootstrap';
+import {
+  NgbModule,
+  NgbNavModule,
+  NgbPopoverModule,
+  NgbProgressbarModule,
+} from '@ng-bootstrap/ng-bootstrap';
 import { SkillsComponent } from './components/skills/skills.component';
 import { EducationComponent } from './components/education/education.component';
 import { InterestsComponent } from './components/interests/interests.component';
@@ -26,6 +31,9 @@ import { ContactComponent } from './components/pages/contact/contact.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
+import { Canvas2DProjectComponent } from './components/pages/work/canvas2-d-project/canvas2-d-project.component';
+import { PocProjectComponent } from './components/pages/work/poc-project/poc-project.component';
+import { GflotteProjectComponent } from './components/pages/work/gflotte-project/gflotte-project.component';
 
 @NgModule({
   declarations: [
@@ -47,13 +55,18 @@ import { ToastrModule } from 'ngx-toastr';
     ScrollTopComponent,
     MainWorkComponent,
     ContactComponent,
+    Canvas2DProjectComponent,
+    PocProjectComponent,
+    GflotteProjectComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgClickOutsideDirective,
     NgbProgressbarModule,
+    NgbModule,
     NgbNavModule,
+    NgbPopoverModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
     ToastrModule.forRoot({
