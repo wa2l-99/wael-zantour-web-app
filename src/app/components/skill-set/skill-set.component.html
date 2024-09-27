@@ -1,6 +1,23 @@
 <div class="container">
   <div class="section-title mb-5">
-    <h2>Mon Savoir-Faire</h2>
+    <div class="row justify-content-between align-items-center">
+      <!-- Conteneur pour le titre et le bouton -->
+      <div class="col-auto section-title">
+        <h2>Mon Savoir-Faire</h2>
+      </div>
+
+      <div class="col-auto">
+        <div class="see_all_btn">
+          <a
+            [routerLink]="['/aboutMe']"
+            fragment="skills"
+            class="hero_btn w-inline-block"
+          >
+            <div class="hero_btn_text">Voir plus</div>
+          </a>
+        </div>
+      </div>
+    </div>
     <p>
       Je mets à profit à la fois mon expertise technique et ma réflexion
       stratégique pour offrir des solutions complètes et efficaces.
@@ -8,171 +25,1195 @@
   </div>
   <h3 class="text-lg">Technologies Utilisées</h3>
   <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 gap-4 mb-4">
-    <div class="col skillbox">
+    <button
+      class="col skillbox"
+      type="button"
+      [ngbPopover]="popoverContent1"
+      placement="bottom"
+      popoverTitle="Spring Boot"
+      (shown)="changePopoverColor('#68bd45')"
+    >
+      <ng-template #popoverContent1>
+        <p>
+          <b>Spring Boot</b> est un framework Java open source utilisé pour
+          programmer des applications Spring autonomes de qualité production
+          avec un ensemble de bibliothèques qui facilitent le démarrage et la
+          gestion des projets.
+        </p>
+        <div class="row g-2">
+          <div class="col-auto">
+            <button
+              class="btn-project mt-1"
+              [routerLink]="'/work/medHeadPOC-project'"
+            >
+              <div class="btn-text-p">
+                MedHead Consortium <i class="fa fa-angle-right"></i>
+              </div>
+            </button>
+          </div>
+        </div>
+      </ng-template>
       <div class="skill-image">
         <img src="assets/img/spring.png" alt="Spring-boot-logo" />
       </div>
       <p>Spring Boot</p>
-    </div>
-    <div class="col skillbox">
+    </button>
+    <button
+      class="col skillbox"
+      type="button"
+      [ngbPopover]="popoverContent2"
+      placement="bottom"
+      popoverTitle=".Net"
+      (shown)="changePopoverColor('#b274db')"
+    >
+      <ng-template #popoverContent2>
+        <p>
+          <b>dot Net</b> est une plateforme de développement gratuite,
+          multiplateforme et open source permettant de créer de nombreux types
+          d’applications. Elle peut exécuter des programmes écrits dans
+          plusieurs langages, C# étant le plus populaire. Elle repose sur un
+          runtime hautes performances utilisé en production par de nombreuses
+          applications à grande échelle.
+        </p>
+
+        <div class="row g-2">
+          <div class="col-auto">
+            <button
+              class="btn-project mt-1"
+              [routerLink]="'/work/medHeadPOC-project'"
+            >
+              <div class="btn-text-p">
+                MedHead Consortium <i class="fa fa-angle-right"></i>
+              </div>
+            </button>
+          </div>
+        </div>
+      </ng-template>
       <div class="skill-image">
         <img src="assets/img/NET-Framework-Logo.png" alt=".Net-log" />
       </div>
       <p>.Net</p>
-    </div>
-    <div class="col skillbox">
+    </button>
+    <button
+      class="col skillbox"
+      type="button"
+      [ngbPopover]="popoverContent3"
+      placement="bottom"
+      popoverTitle="Java"
+      (shown)="changePopoverColor('#ad2829')"
+    >
+      <ng-template #popoverContent3>
+        <p>
+          <b>Java</b> est un<b>
+            langage de programmation multiplateforme orienté objet</b
+          >
+          qui s’exécute sur des milliards d’appareils dans le monde entier. Il
+          alimente les applications, les systèmes d’exploitation smartphone, les
+          logiciels d’entreprise et de nombreux programmes connus. Même s’il y a
+          plus de 20 ans, Java est actuellement le langage de programmation le
+          plus populaire pour les développeurs d’applications.
+        </p>
+        <div class="row g-2">
+          <div class="col-auto">
+            <button
+              class="btn-project mt-1"
+              [routerLink]="'/work/medHeadPOC-project'"
+            >
+              <div class="btn-text-p">
+                MedHead Consortium <i class="fa fa-angle-right"></i>
+              </div>
+            </button>
+          </div>
+        </div>
+      </ng-template>
       <div class="skill-image">
         <img src="assets/img/java-logo.png" alt="java-logo" />
       </div>
       <p>Java</p>
-    </div>
-    <div class="col skillbox">
-      <div class="skill-image">
-        <img src="assets/img/symfony-logo.png" alt="symfony-logo" />
-      </div>
-      <p>Symfony</p>
-    </div>
-    <div class="col skillbox">
+    </button>
+
+    <button
+      class="col skillbox"
+      type="button"
+      [ngbPopover]="popoverContent4"
+      placement="bottom"
+      popoverTitle="PHP"
+      (shown)="changePopoverColor('#787CB4')"
+    >
+      <ng-template #popoverContent4>
+        <p>
+          <b>Hypertext Preprocessor</b>, plus connu sous son sigle <b>PHP</b>,
+          est un langage de programmation libre, principalement utilisé pour
+          produire des pages Web dynamiques via un serveur web, mais pouvant
+          également fonctionner comme n'importe quel langage interprété de façon
+          locale. PHP est un langage impératif orienté objet.
+        </p>
+
+        <div class="row g-2">
+          <div class="col-auto">
+            <button
+              class="btn-project mt-1"
+              [routerLink]="'/work/canvas2d-project'"
+            >
+              <div class="btn-text-p">
+                ENT-Canvas2D <i class="fa fa-angle-right"></i>
+              </div>
+            </button>
+          </div>
+        </div>
+      </ng-template>
       <div class="skill-image">
         <img src="assets/img/php.png" alt="PHP" />
       </div>
       <p>PHP</p>
-    </div>
-    <div class="col skillbox">
+    </button>
+    <button
+      class="col skillbox"
+      type="button"
+      [ngbPopover]="popoverContent5"
+      placement="bottom"
+      popoverTitle="JavaScript"
+      (shown)="changePopoverColor('#f0db4f')"
+    >
+      <ng-template #popoverContent5>
+        <p>
+          <b>JavaScript</b> (souvent abrégé en « <b>JS</b> ») est un langage de
+          script léger, orienté objet, principalement employé dans les pages web
+          interactives et à ce titre est une partie essentielle des applications
+          web. Avec les langages HTML et CSS, JavaScript est au cœur des
+          langages utilisés par les développeurs web.
+        </p>
+
+        <div class="row g-2">
+          <div class="col-auto">
+            <button
+              class="btn-project mt-1"
+              [routerLink]="'/work/canvas2d-project'"
+            >
+              <div class="btn-text-p">
+                ENT-Canvas2D <i class="fa fa-angle-right"></i>
+              </div>
+            </button>
+          </div>
+          <div class="col-auto">
+            <button
+              class="btn-project mt-1"
+              [routerLink]="'/work/gFlotte-project'"
+            >
+              <div class="btn-text-p">
+                GFlotte Automible <i class="fa fa-angle-right"></i>
+              </div>
+            </button>
+          </div>
+          <div class="col-auto">
+            <button
+              class="btn-project mt-1"
+              [routerLink]="'/work/medHeadPOC-project'"
+            >
+              <div class="btn-text-p">
+                MedHead Consortium <i class="fa fa-angle-right"></i>
+              </div>
+            </button>
+          </div>
+        </div>
+      </ng-template>
       <div class="skill-image">
         <img src="assets/img/JavaScript-logo.png" alt="JavaScript-logo" />
       </div>
       <p>JavaScript</p>
-    </div>
-    <div class="col skillbox">
+    </button>
+    <button
+      class="col skillbox"
+      type="button"
+      [ngbPopover]="popoverContent6"
+      placement="bottom"
+      popoverTitle="Angular"
+      (shown)="changePopoverColor('#f30753')"
+    >
+      <ng-template #popoverContent6>
+        <p>
+          <b>Angular</b> est un framework open-source pour construire des
+          applications web dynamiques en TypeScript. Il propose une architecture
+          basée sur des composants, une liaison de données bidirectionnelle et
+          des outils puissants pour développer des applications modulaires,
+          évolutives et performantes.
+        </p>
+        <div class="row g-2">
+          <div class="col-auto">
+            <button
+              class="btn-project mt-1"
+              [routerLink]="'/work/medHeadPOC-project'"
+            >
+              <div class="btn-text-p">
+                MedHead Consortium <i class="fa fa-angle-right"></i>
+              </div>
+            </button>
+          </div>
+        </div>
+      </ng-template>
       <div class="skill-image">
         <img src="assets/img/angular-logo.png" alt="angular-logo" />
       </div>
       <p>Angular</p>
-    </div>
-    <div class="col skillbox">
+    </button>
+    <button
+      class="col skillbox"
+      type="button"
+      [ngbPopover]="popoverContent7"
+      placement="bottom"
+      popoverTitle="React"
+      (shown)="changePopoverColor('#00d9ff')"
+    >
+      <ng-template #popoverContent7>
+        <p>
+          <b>React</b> est une bibliothèque JavaScript open-source pour la
+          création d'interfaces utilisateur. Maintenue par <b>Meta</b>, elle
+          permet de construire des applications web réactives et performantes
+          grâce à un système de composants réutilisables et un rendu efficace
+          via le Virtual DOM.
+        </p>
+
+        <div class="row g-2">
+          <div class="col-auto">
+            <button
+              class="btn-project mt-1"
+              [routerLink]="'/work/gFlotte-project'"
+            >
+              <div class="btn-text-p">
+                GFlotte Automible <i class="fa fa-angle-right"></i>
+              </div>
+            </button>
+          </div>
+        </div>
+      </ng-template>
+      <div class="skill-image">
+        <img src="assets/img/react.png" alt="react-logo" />
+      </div>
+      <p>React</p>
+    </button>
+    <button
+      class="col skillbox"
+      type="button"
+      [ngbPopover]="popoverContent8"
+      placement="bottom"
+      popoverTitle="Bootstrap"
+      (shown)="changePopoverColor('#890afc')"
+    >
+      <ng-template #popoverContent8>
+        <p>
+          <b>Bootstrap</b> estun framework de développement front-end gratuit et
+          open source pour la création de sites Web et d'applications Web. C'est
+          un ensemble qui contient des codes HTML et CSS, des formulaires,
+          boutons, outils de navigation et autres éléments interactifs, ainsi
+          que des extensions JavaScript en option.
+        </p>
+
+        <div class="row g-2">
+          <div class="col-auto">
+            <button
+              class="btn-project mt-1"
+              [routerLink]="'/work/canvas2d-project'"
+            >
+              <div class="btn-text-p">
+                ENT-Canvas2D <i class="fa fa-angle-right"></i>
+              </div>
+            </button>
+          </div>
+          <div class="col-auto">
+            <button
+              class="btn-project mt-1"
+              [routerLink]="'/work/gFlotte-project'"
+            >
+              <div class="btn-text-p">
+                GFlotte Automible <i class="fa fa-angle-right"></i>
+              </div>
+            </button>
+          </div>
+          <div class="col-auto">
+            <button
+              class="btn-project mt-1"
+              [routerLink]="'/work/medHeadPOC-project'"
+            >
+              <div class="btn-text-p">
+                MedHead Consortium <i class="fa fa-angle-right"></i>
+              </div>
+            </button>
+          </div>
+        </div>
+      </ng-template>
       <div class="skill-image">
         <img src="assets/img/Bootstrap_logo.png" alt="Bootstrap_logo" />
       </div>
       <p>Bootstrap</p>
-    </div>
+    </button>
 
-    <div class="col skillbox">
+    <button
+      class="col skillbox"
+      type="button"
+      [ngbPopover]="popoverContent9"
+      placement="bottom"
+      popoverTitle="HTML"
+      (shown)="changePopoverColor('#ff6c39')"
+    >
+      <ng-template #popoverContent9>
+        <p>
+          <b>HTML</b> signifie « <b>HyperText Markup Language</b> » qu'on peut
+          traduire par « <b>langage de balises pour l'hypertexte</b> ». Il est
+          utilisé afin de créer et de représenter le contenu d'une page web et
+          sa structure. D'autres technologies sont utilisées avec HTML pour
+          décrire la présentation d'une page (CSS) et/ou ses fonctionnalités
+          interactives (JavaScript).
+        </p>
+
+        <div class="row g-2">
+          <div class="col-auto">
+            <button
+              class="btn-project mt-1"
+              [routerLink]="'/work/canvas2d-project'"
+            >
+              <div class="btn-text-p">
+                ENT-Canvas2D <i class="fa fa-angle-right"></i>
+              </div>
+            </button>
+          </div>
+          <div class="col-auto">
+            <button
+              class="btn-project mt-1"
+              [routerLink]="'/work/gFlotte-project'"
+            >
+              <div class="btn-text-p">
+                GFlotte Automible <i class="fa fa-angle-right"></i>
+              </div>
+            </button>
+          </div>
+          <div class="col-auto">
+            <button
+              class="btn-project mt-1"
+              [routerLink]="'/work/medHeadPOC-project'"
+            >
+              <div class="btn-text-p">
+                MedHead Consortium <i class="fa fa-angle-right"></i>
+              </div>
+            </button>
+          </div>
+        </div>
+      </ng-template>
       <div class="skill-image">
         <img src="assets/img/html.png" alt="html-logo" />
       </div>
       <p>HTML</p>
-    </div>
-    <div class="col skillbox">
+    </button>
+    <button
+      class="col skillbox"
+      type="button"
+      [ngbPopover]="popoverContent10"
+      placement="bottom"
+      popoverTitle="CSS"
+      (shown)="changePopoverColor('#1c88c7')"
+    >
+      <ng-template #popoverContent10>
+        <p>
+          <b>CSS</b> (pour <b>Cascading Style Sheets</b> en anglais), soit
+          feuilles de style en cascade, est un langage de feuille de style
+          utilisé pour décrire la présentation d'un document écrit en HTML ou
+          XML. CSS décrit la façon dont les éléments doivent être affichés à
+          l'écran, sur papier, à l'oral ou sur d'autres médias.
+        </p>
+
+        <div class="row g-2">
+          <div class="col-auto">
+            <button
+              class="btn-project mt-1"
+              [routerLink]="'/work/canvas2d-project'"
+            >
+              <div class="btn-text-p">
+                ENT-Canvas2D <i class="fa fa-angle-right"></i>
+              </div>
+            </button>
+          </div>
+          <div class="col-auto">
+            <button
+              class="btn-project mt-1"
+              [routerLink]="'/work/gFlotte-project'"
+            >
+              <div class="btn-text-p">
+                GFlotte Automible <i class="fa fa-angle-right"></i>
+              </div>
+            </button>
+          </div>
+          <div class="col-auto">
+            <button
+              class="btn-project mt-1"
+              [routerLink]="'/work/medHeadPOC-project'"
+            >
+              <div class="btn-text-p">
+                MedHead Consortium <i class="fa fa-angle-right"></i>
+              </div>
+            </button>
+          </div>
+        </div>
+      </ng-template>
       <div class="skill-image">
         <img src="assets/img/css.png" alt="Css-logo" />
       </div>
       <p>CSS</p>
-    </div>
-    <div class="col skillbox">
+    </button>
+    <button
+      class="col skillbox"
+      type="button"
+      [ngbPopover]="popoverContent11"
+      placement="bottom"
+      popoverTitle="MySQL"
+      (shown)="changePopoverColor('#e68f00')"
+    >
+      <ng-template #popoverContent11>
+        <p>
+          <b>MySQL</b> est un système de gestion de base de données
+          relationnelles (SGBDR). Il s’agit d’un SGBDR open-source développé et
+          supporté par Oracle, le leader mondial de la base de données.Il est
+          utilisée pour les applications web, le traitement et le stockage de
+          données à grande échelle, ou toute autre situation où une haute
+          disponibilité, fiabilité et performance sont requises.
+        </p>
+        <div class="row g-2">
+          <div class="col-auto">
+            <button
+              class="btn-project mt-1"
+              [routerLink]="'/work/canvas2d-project'"
+            >
+              <div class="btn-text-p">
+                ENT-Canvas2D <i class="fa fa-angle-right"></i>
+              </div>
+            </button>
+          </div>
+        </div>
+      </ng-template>
       <div class="skill-image">
         <img src="assets/img/mySql.png" alt="mySql-logo" />
       </div>
-      <p>MySql</p>
-    </div>
-    <div class="col skillbox">
+      <p>MySQL</p>
+    </button>
+    <button
+      class="col skillbox"
+      type="button"
+      [ngbPopover]="popoverContent12"
+      placement="bottom"
+      popoverTitle="PostgreSQL"
+      (shown)="changePopoverColor('#336791')"
+    >
+      <ng-template #popoverContent12>
+        <p>
+          <b>PostgreSQL</b> est un système de gestion de bases de données
+          relationnelles open-source, reconnu pour sa robustesse et sa
+          conformité aux standards SQL. Il prend en charge des fonctionnalités
+          avancées telles que les types de données personnalisés,
+          l'extensibilité, et la gestion des transactions complexes.
+        </p>
+        <div class="row g-2">
+          <div class="col-auto">
+            <button
+              class="btn-project mt-1"
+              [routerLink]="'/work/medHeadPOC-project'"
+            >
+              <div class="btn-text-p">
+                MedHead Consortium <i class="fa fa-angle-right"></i>
+              </div>
+            </button>
+          </div>
+        </div>
+      </ng-template>
       <div class="skill-image">
         <img src="assets/img/postgreSql.png" alt="postgreSql-logo" />
       </div>
-      <p>PostgreSql</p>
-    </div>
-    <div class="col skillbox">
+      <p>PostgreSQL</p>
+    </button>
+    <button
+      class="col skillbox"
+      type="button"
+      [ngbPopover]="popoverContent13"
+      placement="bottom"
+      popoverTitle="MongoDB"
+      (shown)="changePopoverColor('#439b34')"
+    >
+      <ng-template #popoverContent13>
+        <p>
+          <b>MongoDB</b> est une base de données <b>NoSQL</b> orientée
+          documents, conçue pour stocker et gérer des données non structurées.
+          Elle offre une grande flexibilité avec son modèle de données basé sur
+          JSON et permet un haut niveau de scalabilité pour les applications
+          modernes.
+        </p>
+
+        <div class="row g-2">
+          <div class="col-auto">
+            <button
+              class="btn-project mt-1"
+              [routerLink]="'/work/medHeadPOC-project'"
+            >
+              <div class="btn-text-p">
+                MedHead Consortium <i class="fa fa-angle-right"></i>
+              </div>
+            </button>
+          </div>
+          <div class="col-auto">
+            <button
+              class="btn-project mt-1"
+              [routerLink]="'/work/gFlotte-project'"
+            >
+              <div class="btn-text-p">
+                GFlotte Automible <i class="fa fa-angle-right"></i>
+              </div>
+            </button>
+          </div>
+        </div>
+      </ng-template>
       <div class="skill-image">
         <img src="assets/img/mongo.png" alt="mongo-logo" />
       </div>
       <p>MongoDB</p>
-    </div>
-    <div class="col skillbox">
+    </button>
+    <button
+      class="col skillbox"
+      type="button"
+      [ngbPopover]="popoverContent14"
+      placement="bottom"
+      popoverTitle="JUnit"
+      (shown)="changePopoverColor('#DC524A')"
+    >
+      <ng-template #popoverContent14>
+        <p>
+          <b>JUnit</b> est un framework de test open-source pour Java, utilisé
+          principalement pour écrire et exécuter des tests unitaires. Il permet
+          de valider le bon fonctionnement du code à travers des annotations
+          simples, des assertions et une intégration fluide avec des outils de
+          build comme Maven et Gradle.
+        </p>
+        <div class="row g-2">
+          <div class="col-auto">
+            <button
+              class="btn-project mt-1"
+              [routerLink]="'/work/medHeadPOC-project'"
+            >
+              <div class="btn-text-p">
+                MedHead Consortium <i class="fa fa-angle-right"></i>
+              </div>
+            </button>
+          </div>
+        </div>
+      </ng-template>
       <div class="skill-image">
-        <img src="assets/img/jest.png" alt="jest-log" />
+        <img src="assets/img/junit.png" alt="JUnit-log" />
       </div>
-      <p>Jest</p>
-    </div>
-    <div class="col skillbox">
+      <p>JUnit</p>
+    </button>
+    <button
+      class="col skillbox"
+      type="button"
+      [ngbPopover]="popoverContent15"
+      placement="bottom"
+      popoverTitle="Postman"
+      (shown)="changePopoverColor('#ff6c37')"
+    >
+      <ng-template #popoverContent15>
+        <p>
+          <b>Postman</b> est un outil collaboratif pour tester et développer des
+          API. Il permet d'envoyer des requêtes HTTP, de valider les réponses,
+          et d'automatiser les tests d'API, facilitant ainsi le processus de
+          développement et de débogage des services web.
+        </p>
+        <div class="row g-2">
+          <div class="col-auto">
+            <button
+              class="btn-project mt-1"
+              [routerLink]="'/work/medHeadPOC-project'"
+            >
+              <div class="btn-text-p">
+                MedHead Consortium <i class="fa fa-angle-right"></i>
+              </div>
+            </button>
+          </div>
+          <div class="col-auto">
+            <button
+              class="btn-project mt-1"
+              [routerLink]="'/work/gFlotte-project'"
+            >
+              <div class="btn-text-p">
+                GFlotte Automible <i class="fa fa-angle-right"></i>
+              </div>
+            </button>
+          </div>
+        </div>
+      </ng-template>
       <div class="skill-image">
         <img src="assets/img/postman.png" alt="postman-logo" />
       </div>
       <p>Postman</p>
-    </div>
-    <div class="col skillbox">
+    </button>
+    <button
+      class="col skillbox"
+      type="button"
+      [ngbPopover]="popoverContent16"
+      placement="bottom"
+      popoverTitle="Cypress"
+      (shown)="changePopoverColor('#15B38A')"
+    >
+      <ng-template #popoverContent16>
+        <p>
+          <b>Cypress</b> est un framework JavaScript d’automatisation des tests
+          pour les applications Web modernes telles que <i>Reactjs</i> ,
+          <i>Angular</i> et <i>Vuejs</i>
+          et aussi les applications Web classiques. Cypress peut être utilisé
+          pour les tests unitaires, de composants, d’intégration, d’API et
+          notamment les tests d’acceptation (e2e).
+        </p>
+        <div class="row g-2">
+          <div class="col-auto">
+            <button
+              class="btn-project mt-1"
+              [routerLink]="'/work/medHeadPOC-project'"
+            >
+              <div class="btn-text-p">
+                MedHead Consortium <i class="fa fa-angle-right"></i>
+              </div>
+            </button>
+          </div>
+        </div>
+      </ng-template>
       <div class="skill-image">
         <img src="assets/img/cypress.png" alt="cypress-logo" />
       </div>
       <p>Cypress</p>
-    </div>
-    <div class="col skillbox">
+    </button>
+    <button
+      class="col skillbox"
+      type="button"
+      [ngbPopover]="popoverContent17"
+      placement="bottom"
+      popoverTitle="Docker"
+      (shown)="changePopoverColor('#2597ee')"
+    >
+      <ng-template #popoverContent17>
+        <p>
+          <b>Docker</b> est une plate-forme logicielle qui vous permet de
+          concevoir, tester et déployer des applications rapidement dans
+          n'importe quel environnement. Docker intègre les logiciels dans des
+          unités normalisées appelées conteneurs, qui rassemblent tous les
+          éléments nécessaires à leur fonctionnement, dont les bibliothèques,
+          les outils système, le code et l'environnement d'exécution.
+        </p>
+        <div class="row g-2">
+          <div class="col-auto">
+            <button
+              class="btn-project mt-1"
+              [routerLink]="'/work/medHeadPOC-project'"
+            >
+              <div class="btn-text-p">
+                MedHead Consortium <i class="fa fa-angle-right"></i>
+              </div>
+            </button>
+          </div>
+        </div>
+      </ng-template>
+
       <div class="skill-image">
         <img src="assets/img/docker.png" alt="docker-logo" />
       </div>
       <p>Docker</p>
-    </div>
-    <div class="col skillbox">
+    </button>
+    <button
+      class="col skillbox"
+      type="button"
+      [ngbPopover]="popoverContent18"
+      placement="bottom"
+      popoverTitle="Git"
+      (shown)="changePopoverColor('#F05033')"
+    >
+      <ng-template #popoverContent18>
+        <p>
+          <b>Git</b> est un système de gestion de version décentralisé, conçu
+          pour suivre les modifications du code source de manière efficace. Il
+          facilite la collaboration entre développeurs, permettant de gérer les
+          branches, fusionner des modifications et maintenir un historique clair
+          du projet.
+        </p>
+        <div class="row g-2">
+          <div class="col-auto">
+            <button
+              class="btn-project mt-1"
+              [routerLink]="'/work/canvas2d-project'"
+            >
+              <div class="btn-text-p">
+                ENT-Canvas2D <i class="fa fa-angle-right"></i>
+              </div>
+            </button>
+          </div>
+          <div class="col-auto">
+            <button
+              class="btn-project mt-1"
+              [routerLink]="'/work/gFlotte-project'"
+            >
+              <div class="btn-text-p">
+                GFlotte Automible <i class="fa fa-angle-right"></i>
+              </div>
+            </button>
+          </div>
+          <div class="col-auto">
+            <button
+              class="btn-project mt-1"
+              [routerLink]="'/work/medHeadPOC-project'"
+            >
+              <div class="btn-text-p">
+                MedHead Consortium <i class="fa fa-angle-right"></i>
+              </div>
+            </button>
+          </div>
+        </div>
+      </ng-template>
+
       <div class="skill-image">
         <img src="assets/img/git.png" alt="git-logo" />
       </div>
       <p>Git</p>
-    </div>
-    <div class="col skillbox">
+    </button>
+    <button
+      class="col skillbox"
+      type="button"
+      [ngbPopover]="popoverContent19"
+      placement="bottom"
+      popoverTitle="Figma"
+      (shown)="changePopoverColor('#0ACF83')"
+    >
+      <ng-template #popoverContent19>
+        <p>
+          <b>Figma</b> est un outil de design d'interface utilisateur
+          collaboratif, basé sur le cloud. Il permet de concevoir des prototypes
+          interactifs, de partager des designs en temps réel et de faciliter la
+          collaboration entre designers et développeurs grâce à ses
+          fonctionnalités de travail en équipe
+        </p>
+        <div class="row g-2">
+          <div class="col-auto">
+            <button
+              class="btn-project mt-1"
+              [routerLink]="'/work/medHeadPOC-project'"
+            >
+              <div class="btn-text-p">
+                MedHead Consortium <i class="fa fa-angle-right"></i>
+              </div>
+            </button>
+          </div>
+        </div>
+      </ng-template>
       <div class="skill-image">
         <img src="assets/img/figma.png" alt="figma-logo" />
       </div>
       <p>Figma</p>
-    </div>
+    </button>
   </div>
   <h3 class="text-lg mt-5">Compétences Clés</h3>
   <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 gap-4">
-    <div class="col skillbox">
+    <button
+      class="col skillbox"
+      type="button"
+      [ngbPopover]="popoverContent20"
+      placement="bottom"
+      popoverTitle="Agilité"
+      (shown)="changePopoverColor('#ffffff')"
+    >
+      <ng-template #popoverContent20>
+        <p>
+          <b>L'agilité</b> est une méthodologie de gestion de projet centrée sur
+          l'adaptabilité, la collaboration et l'amélioration continue. Elle
+          permet de livrer des produits de manière itérative, en s'ajustant
+          rapidement aux changements et en mettant l'accent sur la satisfaction
+          du client.<br /><br />– En tant que développeur, j'ai appliqué les
+          principes de l'agilité dans plusieurs projets, en utilisant des
+          frameworks comme Scrum et Kanban.
+        </p>
+        <div class="row g-2">
+          <div class="col-auto">
+            <button
+              class="btn-project mt-1"
+              [routerLink]="'/work/gFlotte-project'"
+            >
+              <div class="btn-text-p">
+                GFlotte Automible <i class="fa fa-angle-right"></i>
+              </div>
+            </button>
+          </div>
+          <div class="col-auto">
+            <button
+              class="btn-project mt-1"
+              [routerLink]="'/work/canvas2d-project'"
+            >
+              <div class="btn-text-p">
+                ENT-Canvas2D <i class="fa fa-angle-right"></i>
+              </div>
+            </button>
+          </div>
+          <div class="col-auto">
+            <button
+              class="btn-project mt-1"
+              [routerLink]="'/work/medHeadPOC-project'"
+            >
+              <div class="btn-text-p">
+                MedHead Consortium <i class="fa fa-angle-right"></i>
+              </div>
+            </button>
+          </div>
+        </div>
+      </ng-template>
       <div class="skill-image">
         <img src="assets/img/agile.png" alt="agile-logo" />
       </div>
       <p>Agilité</p>
-    </div>
-    <div class="col skillbox">
+    </button>
+    <button
+      class="col skillbox"
+      type="button"
+      [ngbPopover]="popoverContent21"
+      placement="bottom"
+      popoverTitle="Analyse"
+      (shown)="changePopoverColor('#ffffff')"
+    >
+      <ng-template #popoverContent21>
+        <p>
+          <b>L'analyse</b> consiste à examiner des informations pour en tirer
+          des conclusions pertinentes et des solutions adaptées. <br /><br />–
+          J'utilise cette compétence pour analyser les besoins fonctionnels et
+          non fonctionnels dans les projets, en collaborant avec les parties
+          prenantes pour comprendre les exigences métier et techniques, afin de
+          proposer des solutions optimales et adaptées aux systèmes développés.
+        </p>
+
+        <div class="row g-2">
+          <div class="col-auto">
+            <button
+              class="btn-project mt-1"
+              [routerLink]="'/work/canvas2d-project'"
+            >
+              <div class="btn-text-p">
+                ENT-Canvas2D <i class="fa fa-angle-right"></i>
+              </div>
+            </button>
+          </div>
+          <div class="col-auto">
+            <button
+              class="btn-project mt-1"
+              [routerLink]="'/work/gFlotte-project'"
+            >
+              <div class="btn-text-p">
+                GFlotte Automible <i class="fa fa-angle-right"></i>
+              </div>
+            </button>
+          </div>
+          <div class="col-auto">
+            <button
+              class="btn-project mt-1"
+              [routerLink]="'/work/medHeadPOC-project'"
+            >
+              <div class="btn-text-p">
+                MedHead Consortium <i class="fa fa-angle-right"></i>
+              </div>
+            </button>
+          </div>
+        </div>
+      </ng-template>
       <div class="skill-image">
         <img src="assets/img/analysing.png" alt="analysing-logo" />
       </div>
       <p>Analyse</p>
-    </div>
-    <div class="col skillbox">
+    </button>
+    <button
+      class="col skillbox"
+      type="button"
+      [ngbPopover]="popoverContent22"
+      placement="bottom"
+      popoverTitle="Architecture Logicielle"
+      (shown)="changePopoverColor('#ffffff')"
+    >
+      <ng-template #popoverContent22>
+        <p>
+          <b>L'architecture logicielle</b> concerne la planification et la
+          structuration des systèmes pour garantir leur robustesse et leur
+          évolutivité. <br /><br />– J'ai développé des compétences en
+          conception et architecture logicielle pour structurer des applications
+          robustes et évolutives. Cela inclut la définition de l'architecture
+          système, le choix des technologies adaptées et la modélisation des
+          composants pour assurer une intégration fluide et des performances
+          optimales.
+        </p>
+
+        <div class="row g-2">
+          <div class="col-auto">
+            <button
+              class="btn-project mt-1"
+              [routerLink]="'/work/medHeadPOC-project'"
+            >
+              <div class="btn-text-p">
+                MedHead Consortium <i class="fa fa-angle-right"></i>
+              </div>
+            </button>
+          </div>
+          <div class="col-auto">
+            <button
+              class="btn-project mt-1"
+              [routerLink]="'/work/gFlotte-project'"
+            >
+              <div class="btn-text-p">
+                GFlotte Automible <i class="fa fa-angle-right"></i>
+              </div>
+            </button>
+          </div>
+        </div>
+      </ng-template>
       <div class="skill-image">
         <img src="assets/img/cms.png" alt="cms-logo" />
       </div>
-      <p>Conception & Architecture</p>
-    </div>
-    <div class="col skillbox">
+      <p>Architecture Logicielle</p>
+    </button>
+    <button
+      class="col skillbox"
+      type="button"
+      [ngbPopover]="popoverContent23"
+      placement="bottom"
+      popoverTitle="Résolution de Problèmes"
+      (shown)="changePopoverColor('#ffffff')"
+    >
+      <ng-template #popoverContent23>
+        <p>
+          <b>La résolution de problèmes</b> consiste à identifier, analyser et
+          apporter des solutions efficaces à des situations complexes.
+          <br /><br />– Dans mon expérience, j'ai utilisé cette compétence pour
+          diagnostiquer et résoudre des incidents techniques rapidement, en
+          adoptant une approche méthodique pour comprendre les causes profondes
+          et mettre en place des solutions durables, que ce soit pour des bugs
+          ou des dysfonctionnements côté client.
+        </p>
+
+        <div class="row g-2">
+          <div class="col-auto">
+            <button
+              class="btn-project mt-1"
+              [routerLink]="'/work/canvas2d-project'"
+            >
+              <div class="btn-text-p">
+                ENT-Canvas2D <i class="fa fa-angle-right"></i>
+              </div>
+            </button>
+          </div>
+          <div class="col-auto">
+            <button
+              class="btn-project mt-1"
+              [routerLink]="'/work/gFlotte-project'"
+            >
+              <div class="btn-text-p">
+                GFlotte Automible <i class="fa fa-angle-right"></i>
+              </div>
+            </button>
+          </div>
+          <div class="col-auto">
+            <button
+              class="btn-project mt-1"
+              [routerLink]="'/work/medHeadPOC-project'"
+            >
+              <div class="btn-text-p">
+                MedHead Consortium <i class="fa fa-angle-right"></i>
+              </div>
+            </button>
+          </div>
+        </div>
+      </ng-template>
       <div class="skill-image">
         <img src="assets/img/idea.png" alt="idea-logo" />
       </div>
       <p>Résolution de Problèmes</p>
-    </div>
-    <div class="col skillbox">
+    </button>
+    <button
+      class="col skillbox"
+      type="button"
+      [ngbPopover]="popoverContent24"
+      placement="bottom"
+      popoverTitle="Conception"
+      (shown)="changePopoverColor('#ffffff')"
+    >
+      <ng-template #popoverContent24>
+        <p>
+          <b>La conception</b> consiste à structurer des solutions techniques
+          adaptées aux besoins d'un projet en utilisant des outils de
+          modélisation. <br /><br />– Dans mes projets, j'ai utilisé des
+          diagrammes UML tels que les diagrammes de classes, de séquence et de
+          cas d'utilisation pour concevoir des systèmes clairs et bien
+          structurés. Ces diagrammes permettent de visualiser l'architecture,
+          les interactions entre les composants et les flux fonctionnels,
+          garantissant une meilleure communication avec les équipes et une
+          implémentation cohérente.
+        </p>
+
+        <div class="row g-2">
+          <div class="col-auto">
+            <button
+              class="btn-project mt-1"
+              [routerLink]="'/work/medHeadPOC-project'"
+            >
+              <div class="btn-text-p">
+                MedHead Consortium <i class="fa fa-angle-right"></i>
+              </div>
+            </button>
+          </div>
+          <div class="col-auto">
+            <button
+              class="btn-project mt-1"
+              [routerLink]="'/work/gFlotte-project'"
+            >
+              <div class="btn-text-p">
+                GFlotte Automible <i class="fa fa-angle-right"></i>
+              </div>
+            </button>
+          </div>
+        </div>
+      </ng-template>
       <div class="skill-image">
         <img src="assets/img/diagram.png" alt="diagram-logo" />
       </div>
       <p>Conception</p>
-    </div>
-    <div class="col skillbox">
+    </button>
+    <button
+      class="col skillbox"
+      type="button"
+      [ngbPopover]="popoverContent25"
+      placement="bottom"
+      popoverTitle="Collaboration"
+      (shown)="changePopoverColor('#ffffff')"
+    >
+      <ng-template #popoverContent25>
+        <p>
+          <b>La collaboration</b> est essentielle pour atteindre des objectifs
+          communs dans un environnement d'équipe. <br /><br />– J'ai travaillé
+          étroitement avec des développeurs, chefs de projet et équipes support.
+          J'ai participé à des réunions, contribué à la résolution de problèmes
+          techniques en groupe et utilisé des outils comme Jet ServiceNow pour
+          la gestion des incidents et la communication efficace au sein des
+          équipes.
+        </p>
+
+        <div class="row g-2">
+          <div class="col-auto">
+            <button
+              class="btn-project mt-1"
+              [routerLink]="'/work/canvas2d-project'"
+            >
+              <div class="btn-text-p">
+                ENT-Canvas2D <i class="fa fa-angle-right"></i>
+              </div>
+            </button>
+          </div>
+          <div class="col-auto">
+            <button
+              class="btn-project mt-1"
+              [routerLink]="'/work/gFlotte-project'"
+            >
+              <div class="btn-text-p">
+                GFlotte Automible <i class="fa fa-angle-right"></i>
+              </div>
+            </button>
+          </div>
+        </div>
+      </ng-template>
       <div class="skill-image">
         <img src="assets/img/communication.png" alt="communication-logo" />
       </div>
       <p>Collaboration</p>
-    </div>
-    <div class="col skillbox">
+    </button>
+    <button
+      class="col skillbox"
+      type="button"
+      [ngbPopover]="popoverContent26"
+      placement="bottom"
+      popoverTitle="Gestion du Temps"
+      (shown)="changePopoverColor('#ffffff')"
+    >
+      <ng-template #popoverContent26>
+        <p>
+          <b>La gestion du temps</b> consiste à organiser et planifier
+          efficacement ses tâches pour respecter les délais. <br /><br />– J'ai
+          amélioré cette compétence en priorisant les tâches, respectant les
+          échéances, et en utilisant le Sprint Board et ServiceNow pour suivre
+          les tâches, prioriser les incidents, et garantir la livraison des
+          projets dans les délais impartis
+        </p>
+        <div class="row g-2">
+          <div class="col-auto">
+            <button
+              class="btn-project mt-1"
+              [routerLink]="'/work/canvas2d-project'"
+            >
+              <div class="btn-text-p">
+                ENT-Canvas2D <i class="fa fa-angle-right"></i>
+              </div>
+            </button>
+          </div>
+          <div class="col-auto">
+            <button
+              class="btn-project mt-1"
+              [routerLink]="'/work/gFlotte-project'"
+            >
+              <div class="btn-text-p">
+                GFlotte Automible <i class="fa fa-angle-right"></i>
+              </div>
+            </button>
+          </div>
+          <div class="col-auto">
+            <button
+              class="btn-project mt-1"
+              [routerLink]="'/work/medHeadPOC-project'"
+            >
+              <div class="btn-text-p">
+                MedHead Consortium <i class="fa fa-angle-right"></i>
+              </div>
+            </button>
+          </div>
+        </div>
+      </ng-template>
       <div class="skill-image">
         <img src="assets/img/time-management.png" alt="time-management-logo" />
       </div>
       <p>Gestion du Temps</p>
-    </div>
-    <div class="col skillbox">
+    </button>
+    <button
+      class="col skillbox"
+      type="button"
+      [ngbPopover]="popoverContent27"
+      placement="bottom"
+      popoverTitle="Adaptabilité"
+      (shown)="changePopoverColor('#ffffff')"
+    >
+      <ng-template #popoverContent27>
+        <p>
+          L’adaptabilité consiste à ajuster rapidement son travail face aux
+          changements et aux nouveaux défis.
+          <br /><br />– J'ai développé cette compétence en m'adaptant à de
+          nouveaux outils tels que ServiceNow, technologies tels que C# et .Net,
+          et méthodes de travail, tout en répondant efficacement aux priorités
+          changeantes des projets.
+        </p>
+        <div class="row g-2">
+          <div class="col-auto">
+            <button
+              class="btn-project mt-1"
+              [routerLink]="'/work/canvas2d-project'"
+            >
+              <div class="btn-text-p">
+                ENT-Canvas2D <i class="fa fa-angle-right"></i>
+              </div>
+            </button>
+          </div>
+        </div>
+      </ng-template>
       <div class="skill-image">
         <img src="assets/img/adaptation.png" alt="Adaptability-logo" />
       </div>
       <p>Adaptabilité</p>
-    </div>
+    </button>
   </div>
 </div>

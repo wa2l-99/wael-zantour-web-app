@@ -1,0 +1,35 @@
+::ng-deep .popover {
+  background-color: var(--px-black);
+  border-radius: 0.75rem;
+  border: solid 0.25px;
+  color: rgb(33, 33, 33);
+  box-shadow: 0px 0px 10px #0c0c0c, inset 0px -1px 6px 0px #1e1e1e;
+  max-width: 500px;
+  width: 420px;
+  font-size: 15px;
+}
+
+::ng-deep .popover-header {
+  background-color: var(--px-black);
+
+  border-bottom: 1px solid rgb(33, 33, 33);
+  color: var(--px-white);
+}
+
+::ng-deep .popover-body {
+  color: var(--px-white);
+  padding: 0.5rem;
+}
+
+::ng-deep .bs-popover-bottom > .popover-arrow::before {
+  border-bottom-color: rgb(33, 33, 33);
+}
+
+::ng-deep .bs-popover-bottom > .popover-arrow::after {
+  border-bottom-color: var(--px-black);
+  box-shadow: 0px 0px 10px #0c0c0c, inset 0px -1px 6px 0px #1e1e1e;
+}
+
+::ng-deep .bs-popover-bottom .popover-header::before {
+  border-bottom: 1px solid var(--px-black);
+}
