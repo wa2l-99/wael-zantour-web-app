@@ -15,6 +15,7 @@ import { SkillSetComponent } from './components/skill-set/skill-set.component';
 import { AboutMeComponent } from './components/pages/about-me/about-me.component';
 import { IMAGE_CONFIG } from '@angular/common';
 import {
+  NgbCarousel,
   NgbModule,
   NgbNavModule,
   NgbPopoverModule,
