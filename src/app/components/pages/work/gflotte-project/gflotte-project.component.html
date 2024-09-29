@@ -58,7 +58,7 @@
         controls
         class="card-img"
         alt="..."
-        style="border-radius: 25px"
+        style="border-radius: 25px; cursor: pointer"
       ></video>
       <div class="row g-2 g-lg-3 pt-5 pb-5">
         <div class="col border-col">
@@ -221,7 +221,7 @@
           évolutivité et maintenabilité
         </p>
 
-        <h5 class="d-flex pt-3" style="color: white; justify-content: center">
+        <h5 class="d-flex pt-3" style="color: #d3d1d1; justify-content: center">
           🔹Maquettes &amp; Prototypes🔹
         </h5>
         <section id="interface" class="interface section pt-3 pb-3">
@@ -361,7 +361,7 @@
               <!-- Template for the modal -->
               <ng-template #imageModal let-modal>
                 <div class="modal-header">
-                  <h4 class="modal-title">Image Preview</h4>
+                  <h4 class="modal-title">Wireframe créé avec Balsamiq</h4>
                   <button
                     type="button"
                     class="btn-close"
@@ -371,15 +371,6 @@
                 </div>
                 <div class="modal-body text-center">
                   <img [src]="selectedImage" class="img-fluid" />
-                </div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-secondary"
-                    (click)="modal.close()"
-                  >
-                    Fermer
-                  </button>
                 </div>
               </ng-template>
             </div>
@@ -505,7 +496,7 @@
         <p class="text-xl">
           🡮 N'hésitez pas à explorer le code source sur GitLab🡯
         </p>
-        <div class="action-git">958 × 680 px
+        <div class="action-git">
           <a
             href="https://gitlab.com/wa2l-99/gflotte-pfe"
             class="git-btn"

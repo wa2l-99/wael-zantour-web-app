@@ -10,7 +10,7 @@
         <!--<div class="header__logo-img-cont">
           <img src="assets\img\Me.jpeg" alt="" class="header__logo-img" />
         </div>-->
-        <a class="navbar-brand" href="javascript:">
+        <a class="navbar-brand" routerLink="/">
           <img
             class="logo-dark"
             title=""
@@ -35,18 +35,18 @@
             [routerLinkActive]="'active'"
             [routerLinkActiveOptions]="{ exact: true }"
           >
-            Home
+            Accueil
           </div>
         </a>
       </li>
       <li>
         <a class="menu-item" routerLink="/aboutMe">
-          <div class="shape-bg" [routerLinkActive]="'active'">About Me</div>
+          <div class="shape-bg" [routerLinkActive]="'active'">Qui suis-je ?</div>
         </a>
       </li>
       <li>
         <a class="menu-item" routerLink="/work">
-          <div class="shape-bg" [routerLinkActive]="'active'">work</div>
+          <div class="shape-bg" [routerLinkActive]="'active'">Projets</div>
         </a>
       </li>
 
@@ -60,7 +60,7 @@
     <div class="d-flex" (clickOutside)="onClickedOutside($event)">
       <!-- to scroll let's talk to Contact Page change below "href="javascript:" to " spyOn="contactus" href="#contactus" "-->
       <a class="px-btn dark d-none d-lg-inline-flex" routerLink="/contact"
-        ><i class="available"></i>Hire me</a
+        ><i class="available"></i>Engagez-moi</a
       >
       <button
         class="toggler-menu d-lg-none"

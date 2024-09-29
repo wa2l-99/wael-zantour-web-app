@@ -35,6 +35,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { Canvas2DProjectComponent } from './components/pages/work/canvas2-d-project/canvas2-d-project.component';
 import { PocProjectComponent } from './components/pages/work/poc-project/poc-project.component';
 import { GflotteProjectComponent } from './components/pages/work/gflotte-project/gflotte-project.component';
+import { LineosUserManagerProjectComponent } from './components/pages/work/lineos-user-manager-project/lineos-user-manager-project.component';
 
 @NgModule({
   declarations: [
@@ -59,6 +60,7 @@ import { GflotteProjectComponent } from './components/pages/work/gflotte-project
     Canvas2DProjectComponent,
     PocProjectComponent,
     GflotteProjectComponent,
+    LineosUserManagerProjectComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,19 +1,194 @@
 <main class="main-wrapper">
   <!-- Page Title -->
   <div class="page-title">
-    <div class="heading">
+    <div class="heading pb-3">
       <div class="container">
         <div class="text-title">
-          <h1 class="text-muted opacity-1 text-uppercase mb-0">Portfolio</h1>
+          <h1 class="text-muted opacity-1 text-uppercase mb-0">Projets</h1>
           <p>
-            My Work
+            Mes Réalisations
             <span class="heading-separator-line"></span>
           </p>
         </div>
+      </div>
+      <div class="hero__scroll">
+        <div class="hero__scroll-down"></div>
       </div>
     </div>
     <hr />
   </div>
   <!-- End Page Title -->
+  <section class="section">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-2 g-4 row-work">
+        <div class="col">
+          <div class="card workCard card-1">
+            <a routerLink="/work/medHeadPOC-project">
+              <div class="header">
+                <p>#Projet Académique</p>
+              </div>
+              <div class="card-body">
+                <div class="body-first-img">
+                  <img src="/assets/img/medhead.svg" alt="" />
+                </div>
+                <div class="box body-main-img">
+                  <img src="/assets/img/poc-img.svg" alt="" />
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="project-desc mt-4">
+            <h3>MedHead Consortium</h3>
+            <p class="font-medium">
+              Proof of Concept (PoC) de la plateforme MedHead, une solution de
+              gestion des réservations de lits d'hôpitaux développée avec une
+              architecture microservices.
+            </p>
+            <div class="actions">
+              <a routerLink="/work/medHeadPOC-project" class="hero_btn"
+                ><div class="hero_btn_text">Découvrir le Projet</div>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a
+                href="https://github.com/wa2l-99/MedheadApp_PoC"
+                target="_blank"
+                class="git_btn"
+                ><div class="hero_btn_text">Voir sur GitHub</div>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card workCard card-4">
+            <a routerLink="/work/lineosUserManager-project">
+              <div class="header">
+                <p>#Projet Interne</p>
+              </div>
+              <div class="card-body">
+                <div class="body-first-img">
+                  <img
+                    src="/assets/img/LineosUserManager/logo-LineosM.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="box body-main-img">
+                  <img
+                    src="/assets/img/LineosUserManager/prot-Lineos.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="project-desc mt-4">
+            <h3>Lineos 3 User Manager - Intégration SUP_IAM</h3>
+            <p class="font-medium">
+              Projet de migration et d'intégration de la gestion des des droits
+              d'accès et des utilisateurs Lineos 3 au sein du système existant
+              SUP_IAM. Le but est de simplifier et optimiser la gestion des
+              rôles et accès utilisateurs, en améliorant les modèles et en
+              intégrant de nouvelles fonctionnalités adaptées aux besoins de
+              l’équipe SF4v1.
+            </p>
+            <div class="actions">
+              <a routerLink="/work/lineosUserManager-project" class="hero_btn"
+                ><div class="hero_btn_text">Découvrir le Projet</div>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="https://www.lineos-bmwgroup.com/" class="git_btn"
+                ><div class="hero_btn_text">Vister Lineos3</div>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card workCard card-2">
+            <a routerLink="/work/canvas2d-project">
+              <div class="header">
+                <p>#Projet Académique</p>
+              </div>
+              <div class="card-body">
+                <div class="body-first-img">
+                  <img class="canvas-img" src="/assets/img/canvas.svg" alt="" />
+                </div>
+                <div class="box body-main-img">
+                  <img src="/assets/img/ter-img.svg" alt="" />
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="project-desc mt-4">
+            <h3>
+              Programmation Graphique Interactive &amp; Animation pour le Web
+            </h3>
+            <p class="font-medium">
+              Plateforme d'apprentissage interactive axée sur la programmation
+              graphique et l'animation web.En utilisant l'API Canvas 2D de HTML
+              , nous offrons aux utilisateurs la possibilité de créer et de
+              manipuler des éléments graphiques en temps réel.
+            </p>
+            <div class="actions">
+              <a routerLink="/work/canvas2d-project" class="hero_btn"
+                ><div class="hero_btn_text">Découvrir le Projet</div>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a
+                href="https://github.com/wa2l-99/Site_Canvas2D"
+                class="git_btn"
+                target="_blank"
+                ><div class="hero_btn_text">Voir sur GitHub</div>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card workCard card-3">
+            <a routerLink="/work/gFlotte-project">
+              <div class="header">
+                <p>#Projet Fin d'étude</p>
+              </div>
+              <div class="card-body">
+                <div class="body-first-img">
+                  <img src="/assets/img/gflotte-project/logo.svg" alt="" />
+                </div>
+                <div class="box body-main-img">
+                  <img
+                    src="/assets/img/gflotte-project/mock-gflotte.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="project-desc mt-4">
+            <h3>GFlotte automobile</h3>
+            <p class="font-medium">
+              Le projet GFlotte visait à développer une application web dédiée à
+              la gestion de flotte automobile. Cette application avait pour but
+              de faciliter la gestion des véhicules, conducteurs, missions,
+              ainsi que les opérations de maintenance et d'entretien.
+              <br />GFlotte optimisait la gestion en temps réel, avec une
+              interface conviviale et une sécurité renforcée grâce à la gestion
+              des droits d'accès, améliorant ainsi l'efficacité et la
+              traçabilité des opérations.
+            </p>
+            <div class="actions">
+              <a routerLink="/work/gFlotte-project" class="hero_btn"
+                ><div class="hero_btn_text">Découvrir le Projet</div>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="https://gitlab.com/wa2l-99/gflotte-pfe" class="git_btn"
+                ><div class="hero_btn_text">Voir sur GitLab</div>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 <app-scroll-top></app-scroll-top>

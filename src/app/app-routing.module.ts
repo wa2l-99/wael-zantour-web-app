@@ -8,6 +8,7 @@ import { Canvas2DProjectComponent } from './components/pages/work/canvas2-d-proj
 import { ViewportScroller } from '@angular/common';
 import { PocProjectComponent } from './components/pages/work/poc-project/poc-project.component';
 import { GflotteProjectComponent } from './components/pages/work/gflotte-project/gflotte-project.component';
+import { LineosUserManagerProjectComponent } from './components/pages/work/lineos-user-manager-project/lineos-user-manager-project.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -17,6 +18,10 @@ const routes: Routes = [
   { path: 'work/canvas2d-project', component: Canvas2DProjectComponent },
   { path: 'work/medHeadPOC-project', component: PocProjectComponent },
   { path: 'work/gFlotte-project', component: GflotteProjectComponent },
+  {
+    path: 'work/lineosUserManager-project',
+    component: LineosUserManagerProjectComponent,
+  },
 ];
 
 @NgModule({

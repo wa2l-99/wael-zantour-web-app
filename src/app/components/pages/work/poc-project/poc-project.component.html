@@ -147,7 +147,6 @@
                   <span>GitHub Actions</span>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
@@ -333,6 +332,9 @@
             <span>LIVRABLES</span>
           </div>
         </div>
+        <h5 class="d-flex pt-3" style="color: #d3d1d1; justify-content: center">
+          🔹Interfaces utilisateur🔹
+        </h5>
         <section id="interface" class="interface section pt-3 pb-3">
           <div class="container">
             <div class="isotope-layout">
@@ -554,7 +556,7 @@
               <!-- Template for the modal -->
               <ng-template #imageModal let-modal>
                 <div class="modal-header">
-                  <h4 class="modal-title">Image Preview</h4>
+                  <h4 class="modal-title"></h4>
                   <button
                     type="button"
                     class="btn-close"
@@ -564,15 +566,6 @@
                 </div>
                 <div class="modal-body text-center">
                   <img [src]="selectedImage" class="img-fluid" />
-                </div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-secondary"
-                    (click)="modal.close()"
-                  >
-                    Fermer
-                  </button>
                 </div>
               </ng-template>
             </div>
