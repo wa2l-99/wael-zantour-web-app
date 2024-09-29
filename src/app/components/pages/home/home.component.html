@@ -33,8 +33,8 @@
                         d'applications web dynamiques et centrées sur
                         l'utilisateur, avec des compétences supplémentaires qui
                         renforcent mon expertise en développement <br />–
-                        Actuellement basé à
-                        <del>Mahdia, TUNISIE</del>, Bordeaux, FRANCE.
+                        Actuellement basé à <del>Mahdia, TUNISIE</del>,
+                        Bordeaux, FRANCE.
                       </p>
                     </div>
                   </div>
@@ -52,6 +52,7 @@
                   </div>
                 </div>
               </div>
+
               <div class="hero_right_col">
                 <div class="hero_img_wrapper">
                   <div class="hero_img-desktop">
@@ -86,19 +87,20 @@
       [ngStyle]="imageStyles"
     />
   </header>
+
+  <section class="section pb-3.image-4">
+    <app-projects-home></app-projects-home>
+  </section>
+  <section class="section">
+    <app-skill-set></app-skill-set>
+  </section>
+
+  <div>
+    <img
+      alt="Personal image"
+      class="perso-img"
+      src="assets/img/img-banner.jpg"
+    />
+  </div>
+  <app-scroll-top></app-scroll-top>
 </main>
-
-<div class="hero__scroll" style="background-color: black; padding-top: 30px">
-  <div class="hero__scroll-down"></div>
-</div>
-<section class="section">
-  <app-projects-home></app-projects-home>
-</section>
-<section class="section">
-  <app-skill-set></app-skill-set>
-</section>
-
-<div>
-  <img alt="Personal image" class="perso-img" src="assets/img/img-banner.jpg" />
-</div>
-<app-scroll-top></app-scroll-top>
