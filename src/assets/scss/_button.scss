@@ -59,7 +59,6 @@
 }
 
 .hero_btn {
-  z-index: 20;
   margin-top: 1px;
   color: #111;
   background-color: #fff;
@@ -79,7 +78,7 @@
   &:hover {
     background: var(--px-black);
     color: var(--px-white);
-    border: 1px solid var(--px-black);
+    border: 1px solid rgba(209, 209, 209, 0.8);
   }
   @include down-xs {
     align-self: center;
@@ -134,7 +133,7 @@
   color: #fff;
   background-color: rgba(247, 247, 247, 0.1);
   border-radius: 100vw;
-  padding: 0.63rem 1.25rem;
+  padding: 0.63rem 0.6rem;
   font-weight: 700;
   position: relative;
   overflow: hidden;
@@ -164,7 +163,7 @@
   border-radius: 6px;
   background: linear-gradient(106deg, #53525221, #23272b);
   position: relative;
-  margin-top: 19%;
+  margin-top: 13%;
   display: inline-block;
   border: 0 none;
   overflow: hidden;
@@ -224,4 +223,103 @@
   background-color: rgb(92 92 92 / 30%) !important;
   border-radius: 100px !important;
   cursor: not-allowed !important;
+}
+
+.project-desc .actions .hero_btn:hover {
+  border: 1px solid rgba(209, 209, 209, 0.8);
+}
+
+.project-desc .actions .hero_btn i,
+.project-desc .actions .git_btn i {
+  font-size: 0;
+  position: relative;
+  transition: 0.4s;
+  opacity: 0;
+}
+
+.project-desc .actions .hero_btn:hover i,
+.project-desc .actions .git_btn:hover i {
+  opacity: 1;
+  top: 2px;
+  left: 10px;
+  font-size: 18px;
+  color: var(--px-white);
+}
+
+.project-desc .actions .git_btn {
+  margin-top: 1px;
+  color: #ffffff;
+  background-color: #7f7f7f;
+  border: 1px solid #7f7f7f;
+  border-radius: 100px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: auto;
+  padding: 0.53rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  @include down-sm {
+    align-self: center;
+    width: 100%;
+    height: 45px;
+    display: flex;
+  }
+}
+
+.project-desc .actions .git_btn:hover {
+  background: #ffffff30;
+  color: #ffffff;
+  border: 1px solid #7f7f7f;
+}
+
+.action-git {
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  flex: 0 1 auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+  .git-btn {
+    color: #fff;
+    border: 1px solid #fff3;
+    line-height: 1.42;
+    border-radius: 100px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+    padding: 0.3rem 1.25rem;
+    font-weight: 500;
+    text-decoration: none;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    background: conic-gradient(
+        from 4deg at 50% 50%,
+        #00000000 50%,
+        #00000000 50%
+      ),
+      radial-gradient(rgb(200 200 200 / 21%) 0%, #00000000 80%);
+
+    .git-btn-text {
+      color: #0000;
+      -webkit-text-fill-color: transparent;
+      background-image: linear-gradient(#fff6, #fff);
+      background-clip: text;
+      font-size: 1.75rem;
+      font-weight: 400;
+      position: relative;
+    }
+  }
+
+  .git-btn:hover {
+    border: 1px solid rgba(255, 255, 255, 0.76);
+    box-shadow: 0 1px 12px rgba(255, 255, 255, 0.438);
+  }
 }

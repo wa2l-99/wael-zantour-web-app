@@ -102,12 +102,15 @@ img {
 .section-title {
   h2 {
     margin: 0;
-    font-size: 40px;
-    font-family: "Degular Bold", "Degular Bold Placeholder", sans-serif;
-    font-weight: 800;
-    background: linear-gradient(177deg, #fff 0%, rgba(255, 255, 255, 0.7) 100%);
+    line-height: 36px;
+    font-family: Productsans, sans-serif;
+    font-weight: 700;
     -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(#fff 38%, #ffffff12);
+    -webkit-background-clip: text;
     background-clip: text;
+    margin-bottom: 0;
+    font-size: 2.5rem;
     @include down-sm {
       font-size: 35px;
     }
@@ -172,7 +175,9 @@ img {
   text-transform: uppercase;
   font-family: var(--heading-font);
 }
-/* Modal
+
+/*----------------------------
+Modal
 -------------------------------*/
 .modal-backdrop.show {
   background: rgba(0, 0, 0, 0.6);
@@ -181,6 +186,12 @@ img {
 }
 .modal-content {
   background: var(--px-black);
+  box-shadow: 5px 5px 19px #131314, -10px -10px 19px #242323;
+  width: auto;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
 }
 .modal-dialog {
   max-width: 1200px;
@@ -190,17 +201,11 @@ img {
   top: 50%;
   transform: translate(-50%, -50%) !important;
   margin-left: 0% !important;
-  background: var(--px-black);
-  box-shadow: 5px 5px 19px #131314, -10px -10px 19px #242323;
-  padding: 45px;
   border-radius: 10px;
   .modal-title {
     color: var(--px-white);
   }
   .btn-close {
-    position: absolute;
-    top: -35px;
-    right: -35px;
     background-color: var(--px-white);
     border: solid 2px;
     border-radius: 30px;
@@ -240,6 +245,27 @@ img.border {
     border-bottom: 1px solid #eee;
   }
 }
+
+/*--------------------------------------------------------------
+# Spinner
+--------------------------------------------------------------*/
+.spinner-wrapper {
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.spinner-border {
+  height: 120px;
+  width: 120px;
+  font-size: 2rem;
+}
+
 /*--------------------------------------------------------------
 # Page Titles
 --------------------------------------------------------------*/
@@ -318,14 +344,36 @@ img.border {
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
-/* Hide spinners in Chrome, Safari, Edge, and Opera */
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+.hero__scroll-down {
+  transform: translate(-50%);
+  width: 1px;
+  height: 4rem;
+  background: #f1dada1a;
+  opacity: 1;
+  overflow: hidden;
 }
 
-/* Hide spinners in Firefox */
-input[type="number"] {
-  -moz-appearance: textfield;
+.hero__scroll-down:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--px-white);
+  height: 100%;
+  width: 100%;
+  animation: scrolling 2s infinite ease-in-out;
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  70% {
+    transform: translateY(100%);
+  }
+
+  to {
+    transform: translateY(100%);
+  }
 }
