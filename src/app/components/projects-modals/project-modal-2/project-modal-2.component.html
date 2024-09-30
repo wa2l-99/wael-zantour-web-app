@@ -1,0 +1,62 @@
+<!-- Project2 -->
+<div class="modal-header" style="border-bottom: none">
+  <button
+    type="button"
+    class="btn-close"
+    aria-label="Close"
+    (click)="activeModal.dismiss('Cross click')"
+  ></button>
+</div>
+<div class="modal-body">
+  <div class="single-project-box">
+    <div class="row align-items-start">
+      <div class="col-lg-7">
+        <img
+          class="border"
+          src="assets/img//canvas2dSite/canvasSite.png"
+          title=""
+          alt=""
+        />
+      </div>
+      <div class="col-lg-5 pt-4 pt-lg-0">
+        <h4 class="modal-title">
+          Programmation Graphique Interactive et Animation pour le Web
+        </h4>
+        <p class="mb-3">
+          Ce projet universitaire consistait en la création d'une plateforme
+          interactive pour l'apprentissage de <b>JavaScript</b> et
+          <b>Canvas 2D</b>. La plateforme regroupe plusieurs exercices pratiques
+          qui offrent aux utilisateurs une expérience d’apprentissage immersive
+          et dynamique.
+        </p>
+        <div class="about-content">
+          <ul>
+            <li class="d-flex">
+              <span class="col-4 col-lg-3">Type:</span>
+              <span>Plateforme Web Interactive</span>
+            </li>
+            <li class="d-flex">
+              <span class="col-4 col-lg-3"> Technologies:</span>
+              <span>JavaScript, HTML5, CSS3, PHP</span>
+            </li>
+            <li class="d-flex">
+              <span class="col-4 col-lg-3">Platform:</span>
+              <span>Développement personnalisé, Canvas 2D </span>
+            </li>
+          </ul>
+        </div>
+        <div class="modal-footer" style="border-top: none">
+          <button
+            class="btn-project"
+            style="margin-top: 33%"
+            (click)="redirectToProject()"
+          >
+            <div class="btn-text-p">
+              VOIR PROJET <i class="fa fa-angle-right"></i>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

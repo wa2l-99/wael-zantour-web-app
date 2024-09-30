@@ -1,0 +1,68 @@
+<!-- Project1 -->
+<div class="modal-header" style="border-bottom: none">
+  <button
+    type="button"
+    class="btn-close"
+    aria-label="Close"
+    (click)="activeModal.dismiss('Cross click')"
+  ></button>
+</div>
+<div class="modal-body">
+  <div class="single-project-box">
+    <div class="row align-items-start">
+      <div class="col-lg-7">
+        <img
+          class="border"
+          src="assets/img//MedHeadApp/popup-poc.png"
+          title=""
+          alt=""
+        />
+      </div>
+      <div class="col-lg-5 pt-4 pt-lg-0">
+        <h4 class="modal-title">
+          Plateforme de Gestion des Lits d'Hôpitaux en Situation d'Urgence
+        </h4>
+        <p class="mb-3">
+          Ce projet universitaire a été réalisé pour démontrer la faisabilité
+          technique d'une plateforme unifiée de gestion des lits d'hôpitaux en
+          temps réel. Le <b>Proof of Concept (PoC)</b> visait à valider une
+          architecture microservices, permettant la réservation de lits
+          d'hôpitaux et l'envoi de notifications tout en garantissant la
+          sécurité des données médicales. La solution a intégré des systèmes
+          diversifiés, tout en assurant la performance et la scalabilité dans
+          des situations d'urgence.
+        </p>
+
+        <div class="about-content">
+          <ul>
+            <li class="d-flex">
+              <span class="col-4 col-lg-3">Type:</span>
+              <span>Plateforme Web de Gestion des Urgences</span>
+            </li>
+            <li class="d-flex">
+              <span class="col-4 col-lg-3"> Technologies:</span>
+              <span
+                >Java, Spring Boot, Angular, Kafka, PostgreSQL, MongoDB, Docker,
+                Cypress</span
+              >
+            </li>
+            <li class="d-flex">
+              <span class="col-4 col-lg-3">Platform:</span>
+              <span>Proof Of Concept, Architecture Microservices, CI/CD </span>
+            </li>
+          </ul>
+        </div>
+        <div class="modal-footer" style="border-top: none">
+          <button
+            class="btn-project"
+            (click)="redirectToProject()"
+          >
+            <div class="btn-text-p">
+              VOIR PROJET <i class="fa fa-angle-right"></i>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

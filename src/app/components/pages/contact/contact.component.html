@@ -1,0 +1,240 @@
+<main class="main-wrapper">
+  <!-- Page Title -->
+  <div class="page-title">
+    <div class="heading pb-3">
+      <div class="container">
+        <div class="text-title">
+          <h1 class="text-muted opacity-1 text-uppercase mb-0">Contact</h1>
+          <p>
+            Échangeons Ensemble <span class="heading-separator-line"></span>
+          </p>
+        </div>
+        <div class="hero__scroll">
+          <div class="hero__scroll-down"></div>
+        </div>
+      </div>
+    </div>
+    <hr />
+  </div>
+  <!-- End Page Title -->
+  <section id="contactus" class="section contactus-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6"></div>
+      </div>
+      <div class="row gy-5">
+        <div class="col-lg-6">
+          <div class="contact-form">
+            <div class="section-heading mb-4">
+              <h6>Prenez Contact</h6>
+              <h2 class="text-white mb-3">Discutons de Vos Projets</h2>
+              <p class="text-white text-opacity-75">
+                N'hésitez pas à me contacter pour toute question ou demande. Je
+                suis ici pour vous accompagner et vous aider à réaliser vos
+                projets.
+              </p>
+            </div>
+            <form
+              [formGroup]="FormData"
+              (ngSubmit)="onSubmit()"
+              id="contact-form"
+              method="POST"
+            >
+              <div class="row gx-3 gy-4">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="form-label">Prénom</label>
+                    <input
+                      name="Prénom"
+                      id="prenom"
+                      placeholder="Prénom *"
+                      class="form-control"
+                      formControlName="Prénom"
+                      type="text"
+                    />
+                    <div
+                      *ngIf="
+                        FormData.get('Prénom')?.invalid &&
+                        FormData.get('Prénom')?.touched
+                      "
+                    >
+                      <small class="text-danger">Prénom est requis</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="form-label">Nom</label>
+                    <input
+                      name="Nom"
+                      id="nom"
+                      placeholder="Nom *"
+                      class="form-control"
+                      formControlName="Nom"
+                      type="text"
+                    />
+                    <div
+                      *ngIf="
+                        FormData.get('Nom')?.invalid &&
+                        FormData.get('Nom')?.touched
+                      "
+                    >
+                      <small class="text-danger">Nom est requis</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="form-label">Email</label>
+                    <input
+                      name="Email"
+                      id="email"
+                      placeholder="Votre Email *"
+                      aria-describedby="emailHelp"
+                      class="form-control"
+                      formControlName="Email"
+                      type="email"
+                    />
+                    <div
+                      *ngIf="
+                        FormData.get('Email')?.invalid &&
+                        FormData.get('Email')?.touched
+                      "
+                    >
+                      <small class="text-danger">Email est requis</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="form-label">Téléphone</label>
+                    <input
+                      name="Téléphone"
+                      id="telephone"
+                      placeholder="Numéro de Téléphone  *"
+                      formControlName="Téléphone"
+                      class="form-control"
+                      type="number"
+                    />
+                    <div
+                      *ngIf="
+                        FormData.get('Téléphone')?.invalid &&
+                        FormData.get('Téléphone')?.touched
+                      "
+                    >
+                      <small class="text-danger">Téléphone est requis</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <label class="form-label">Objet</label>
+                    <input
+                      name="Objet"
+                      id="objet"
+                      placeholder="Objet *"
+                      class="form-control"
+                      formControlName="Objet"
+                      type="text"
+                    />
+                    <div
+                      *ngIf="
+                        FormData.get('Objet')?.invalid &&
+                        FormData.get('Objet')?.touched
+                      "
+                    >
+                      <small class="text-danger">Objet est requis</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label class="form-label">Message</label>
+                    <textarea
+                      name="Message"
+                      id="message"
+                      placeholder="Votre Message *"
+                      rows="4"
+                      class="form-control"
+                      formControlName="Message"
+                    ></textarea>
+                    <div
+                      *ngIf="
+                        FormData.get('Message')?.invalid &&
+                        FormData.get('Message')?.touched
+                      "
+                    >
+                      <small class="text-danger">Message est requis</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="send">
+                    <button
+                      class="msg-btn w-100"
+                      type="submit"
+                      [disabled]="!FormData.valid"
+                      [ngClass]="{
+                        'btn-disabled not-allowed': !FormData.valid,
+                        'px-btn white': FormData.valid
+                      }"
+                    >
+                      Envoyer le message
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-5 ms-auto col-xl-4">
+          <h3 class="contact-info-title">
+            Parlons de vos idées autour d'un café ☕ à <b>Bordeaux</b> !
+          </h3>
+          <ul class="contact-infos">
+            <li>
+              <div class="icon bg-1">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="col">
+                <p>waelzantour1&#64;gmail.com</p>
+              </div>
+            </li>
+            <li>
+              <div class="icon bg-2">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="col">
+                <p>+33 602487721</p>
+              </div>
+            </li>
+            <li>
+              <div class="icon bg-3">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="col">
+                <p>
+                  Mériadeck<br />
+                  33000 Bordeaux, France
+                </p>
+              </div>
+            </li>
+          </ul>
+          <div class="google-map mt-5">
+            <div class="ratio ratio-4x3">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11317.336103854692!2d-0.5964300763095413!3d44.835130485197375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5527e95fd0e7f3%3A0x9dfbf11bc03bed18!2sM%C3%A9riadeck%2C%2033000%20Bordeaux!5e0!3m2!1sfr!2sfr!4v1726532157105!5m2!1sfr!2sfr"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<app-scroll-top></app-scroll-top>

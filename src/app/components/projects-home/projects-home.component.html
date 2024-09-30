@@ -1,0 +1,75 @@
+<div class="container">
+  <div class="section-heading">
+    <div class="row justify-content-between align-items-center">
+      <!-- Conteneur pour le titre et le bouton -->
+      <div class="col-auto section-title">
+        <h2>Mes Réalisations</h2>
+      </div>
+
+      <div class="col-auto">
+        <div class="see_all_btn">
+          <a routerLink="/work" class="hero_btn w-inline-block">
+            <div class="hero_btn_text">Voir tout</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row g-3" style="justify-content: center">
+    <div class="col-sm-12 col-lg-4">
+      <div class="card project-card">
+        <div class="card-img-block">
+          <img
+            class="card-img-top"
+            src="assets/img//MedHeadApp/slice-poc-2.png"
+            alt="Card image cap"
+          />
+        </div>
+        <div class="card-body pt-0">
+          <h5 class="card-title">
+            <a href="javascript:void(0)" (click)="openModal1()"
+              >MedHead Consortium <i class="fa fa-arrow-up"></i
+            ></a>
+          </h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-lg-4">
+      <div class="card project-card">
+        <div class="card-img-block">
+          <img
+            class="card-img-top"
+            src="assets/img//canvas2dSite/acceuil-2.png"
+            alt="Card image cap"
+          />
+        </div>
+        <div class="card-body pt-0">
+          <h5 class="card-title">
+            <a href="javascript:void(0)" (click)="openModal2()"
+              >ENT-Canvas2D <i class="fa fa-arrow-up"></i
+            ></a>
+          </h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-lg-4">
+      <div class="col-sm-12 col-lg-4"></div>
+      <div class="card project-card">
+        <div class="card-img-block">
+          <img
+            class="card-img-top"
+            src="assets/img/gflotte-project/authGflotte.png"
+            alt="Card image cap"
+          />
+        </div>
+        <div class="card-body pt-0">
+          <h5 class="card-title">
+            <a href="javascript:void(0)" (click)="openModal3()"
+              >GFlotte Automible <i class="fa fa-arrow-up"></i
+            ></a>
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
