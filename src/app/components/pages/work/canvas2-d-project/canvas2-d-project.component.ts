@@ -11,20 +11,20 @@ export class Canvas2DProjectComponent {
   showNavigationIndicators = false;
 
   images: string[] = [
-    'assets/img//canelle.png',
-    'assets/img//interaction.gif',
-    'assets/img//paint.png',
-    'assets/img//gradiant.png',
-    'assets/img//courbe.gif',
+    'assets/img/canelle.png',
+    'assets/img/interaction.gif',
+    'assets/img/paint.png',
+    'assets/img/gradiant.png',
+    'assets/img/courbe.gif',
   ];
   images2: string[] = [
-    'assets/img//canvas2dSite/acceuil.png',
-    'assets/img//canvas2dSite/auth-canvas.png',
-    'assets/img//canvas2dSite/signIn.png',
-    'assets/img//canvas2dSite/exo.png',
-    'assets/img//canvas2dSite/dExo.png',
-    'assets/img//canvas2dSite/exer.png',
-    'assets/img//canvas2dSite/feedback.png',
+    'assets/img/canvas2dSite/acceuil.png',
+    'assets/img/canvas2dSite/auth-canvas.png',
+    'assets/img/canvas2dSite/signIn.png',
+    'assets/img/canvas2dSite/exo.png',
+    'assets/img/canvas2dSite/dExo.png',
+    'assets/img/canvas2dSite/exer.png',
+    'assets/img/canvas2dSite/feedback.png',
   ];
   constructor(config: NgbCarouselConfig) {
     config.showNavigationArrows;
