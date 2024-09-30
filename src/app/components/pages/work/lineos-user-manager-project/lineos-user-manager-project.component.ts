@@ -8,7 +8,7 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class LineosUserManagerProjectComponent {
   selectedImage: string | null = null; // L'image sélectionnée à afficher dans la modale
-  imgURL: string = '/assets/img/LineosUserManager/spec.svg';
+  imgURL: string = 'assets/img//LineosUserManager/spec.svg';
   constructor(private modalService: NgbModal) {}
 
   // Méthode pour ouvrir la modale et passer l'image sélectionnée
