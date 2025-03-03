@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+$px-font:			'Jost', sans-serif !default;
+
+
+// Theme Variable
+
+$px-theme:				#010101;
+$px-white:				#fff;
+$px-black:				#010101;
+
+$px-text:				#707476;
+$px-heading:			#010101;
+
+
+
+
+// Variables de breakpoint
+$px-media-xs: 479px ;   // Petite taille d'écran
+$px-media-sm: 767px ;   // Tablettes
+$px-media-md: 991px ;   // Petits écrans desktop
+$px-media-lg: 1200px ;  // Grands écrans desktop
+$px-media-xlg: 1440px ;  // tres Grands écrans desktop

@@ -1,0 +1,22 @@
+.available:before {
+  content: "";
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  background: #98fe7f;
+  border-radius: 50%;
+  margin: 0 0.5rem;
+  vertical-align: middle;
+  transform: translateY(-0.1em);
+  animation: pulse-animation 2s infinite;
+  animation-delay: 3s;
+}
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 #98fe7f80;
+  }
+
+  to {
+    box-shadow: 0 0 0 0.5rem #98fe7f00;
+  }
+}
