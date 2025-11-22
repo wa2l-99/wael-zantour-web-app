@@ -1,8 +1,5 @@
 <!-- Header -->
-<div
-  class="header-top-fixed one-page-nav"
-  [ngClass]="{ 'menu-open menu-open-desk': sidebarOpen }"
->
+<div class="header-top-fixed one-page-nav" [ngClass]="{ 'menu-open menu-open-desk': sidebarOpen }">
   <div class="container">
     <!-- Brand -->
     <div class="logo">
@@ -11,18 +8,8 @@
           <img src="assets\img\Me.jpeg" alt="" class="header__logo-img" />
         </div>-->
         <a class="navbar-brand" routerLink="/">
-          <img
-            class="logo-dark"
-            title=""
-            alt=""
-            src="assets/img/logo-light.svg"
-          />
-          <img
-            class="logo-light"
-            title=""
-            alt=""
-            src="assets/img/logo-light.svg"
-          />
+          <img class="logo-dark" title="" alt="" src="assets/img/logo-light.svg" />
+          <img class="logo-light" title="" alt="" src="assets/img/logo-light.svg" />
         </a>
       </div>
     </div>
@@ -30,11 +17,7 @@
     <ul class="main-menu">
       <li>
         <a class="menu-item" routerLink="/">
-          <div
-            class="shape-bg"
-            [routerLinkActive]="'active'"
-            [routerLinkActiveOptions]="{ exact: true }"
-          >
+          <div class="shape-bg" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{ exact: true }">
             Accueil
           </div>
         </a>
@@ -44,6 +27,101 @@
           <div class="shape-bg" [routerLinkActive]="'active'">Qui suis-je ?</div>
         </a>
       </li>
+      <li>
+        <a class="menu-item" routerLink="/education&experience">
+          <div class="shape-bg" [routerLinkActive]="'active'">Parcours</div>
+        </a>
+      </li>
+      <!-- Dropdown Compétences -->
+      <li class="nav-item" ngbDropdown #competencesMenu="ngbDropdown">
+
+        <a class="menu-item" ngbDropdownToggle id="competencesDropdown" role="button">
+          <span class="shape-bg" [class.active]="rla?.isActive">
+            Compétences
+          </span>
+        </a>
+
+        <div ngbDropdownMenu aria-labelledby="competencesDropdown" class="dropdown-menu-custom">
+          <a class="dropdown-item-submenu" routerLink="/skills" [routerLinkActive]="'active'" #rla="routerLinkActive"
+            (click)="competencesMenu.close()">
+            Toutes mes compétences
+          </a>
+          <div class="dropdown-divider"></div>
+
+          <!-- Sous-menu Techniques -->
+          <div class="dropdown-submenu" ngbDropdown placement="right-top">
+            <button class="dropdown-item-submenu" ngbDropdownToggle>
+              Techniques
+            </button>
+
+            <div ngbDropdownMenu class="submenu ">
+              <button ngbDropdownItem routerLink="/spring-boot">
+                Spring Boot
+              </button>
+              <button ngbDropdownItem routerLink="/dot-net">
+                Dotnet
+              </button>
+              <button ngbDropdownItem routerLink="/javaScript">
+                JavaScript
+              </button>
+              <button ngbDropdownItem routerLink="/php">
+                PHP
+              </button>
+              <button ngbDropdownItem routerLink="/mySql">
+                MySql
+              </button>
+              <button ngbDropdownItem routerLink="/postgreSql">
+                PostgreSQL
+              </button>
+              <button ngbDropdownItem routerLink="/docker">
+                Docker
+              </button>
+              <button ngbDropdownItem routerLink="/angular">
+                Angular
+              </button>
+              <button ngbDropdownItem routerLink="/react">
+                React
+              </button>
+              <button ngbDropdownItem routerLink="/git">
+                GIT
+              </button>
+              <button ngbDropdownItem routerLink="/figma">
+                Figma
+              </button>
+              <button ngbDropdownItem routerLink="/scrum">
+                Scrum
+              </button>
+            </div>
+          </div>
+          <div class="dropdown-divider" style="border-color: transparent;"></div>
+
+          <!-- Sous-menu Humaines -->
+          <div class="dropdown-submenu" ngbDropdown placement="right-top">
+            <button class=" dropdown-item-submenu" ngbDropdownToggle>
+              Comportementales
+            </button>
+
+            <div ngbDropdownMenu class="submenu">
+              <button ngbDropdownItem routerLink="/agilite">
+                Agilité
+              </button>
+              <button ngbDropdownItem routerLink="/problem-resolution">
+                résolution de problèmes
+              </button>
+              <button ngbDropdownItem routerLink="/collaboration-equipe">
+                Collaboration en équipe
+              </button>
+              <button ngbDropdownItem routerLink="/gestion-temps">
+                Gestion du temps
+              </button>
+              <button ngbDropdownItem routerLink="/adaptabilite">
+                Adaptabilité
+              </button>
+            </div>
+          </div>
+        </div>
+      </li>
+
       <li>
         <a class="menu-item" routerLink="/work">
           <div class="shape-bg" [routerLinkActive]="'active'">Projets</div>
@@ -59,14 +137,8 @@
     <!-- Top Menu -->
     <div class="d-flex" (clickOutside)="onClickedOutside($event)">
       <!-- to scroll let's talk to Contact Page change below "href="javascript:" to " spyOn="contactus" href="#contactus" "-->
-      <a class="px-btn dark d-none d-lg-inline-flex" routerLink="/contact"
-        ><i class="available"></i>Engagez-moi</a
-      >
-      <button
-        class="toggler-menu d-lg-none"
-        [ngClass]="{ open: sidebarOpen }"
-        (click)="toggleMenu()"
-      >
+      <a class="px-btn dark d-none d-lg-inline-flex" routerLink="/contact"><i class="available"></i>Engagez-moi</a>
+      <button class="toggler-menu d-lg-none" [ngClass]="{ open: sidebarOpen }" (click)="toggleMenu()">
         <span></span>
       </button>
     </div>

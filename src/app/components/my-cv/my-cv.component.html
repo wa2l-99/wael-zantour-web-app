@@ -1,0 +1,40 @@
+<div class="container">
+    <!-- Cv Section -->
+    <div class="section-title mb-5">
+        <h2>Mon CV</h2>
+    </div>
+    <!-- Onglets de navigation -->
+    <nav ngbNav #nav="ngbNav" class="nav-pills rn-nav-list" [(activeId)]="activeTab">
+        <ng-container [ngbNavItem]="0">
+            <button ngbNavLink>Diplomes & Formations</button>
+            <ng-template ngbNavContent>
+                <section id="education" class="education section pb-2">
+                    <app-education></app-education>
+                </section>
+            </ng-template>
+        </ng-container>
+
+        <ng-container [ngbNavItem]="1">
+            <button ngbNavLink>Expérience professionnelle</button>
+            <ng-template ngbNavContent>
+                <section id="experience" class="experiences section pb-2">
+                    <app-experience></app-experience>
+                </section>
+            </ng-template>
+        </ng-container>
+
+        <!-- <ng-container [ngbNavItem]="2">
+        <button ngbNavLink>Compétences</button>
+        <ng-template ngbNavContent>
+          <section id="skills" class="skills section pb-2">
+            <app-skills></app-skills>
+          </section>
+        </ng-template>
+      </ng-container> -->
+    </nav>
+
+    <!-- Contenu de l'onglet sélectionné -->
+    <div [ngbNavOutlet]="nav"></div>
+</div>
+
+<!-- /Cv Section -->

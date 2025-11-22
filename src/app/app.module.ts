@@ -20,13 +20,13 @@ import {
   NgbNavModule,
   NgbPopoverModule,
   NgbProgressbarModule,
+  NgbDropdownModule,
 } from '@ng-bootstrap/ng-bootstrap';
 import { SkillsComponent } from './components/skills/skills.component';
 import { EducationComponent } from './components/education/education.component';
 import { InterestsComponent } from './components/interests/interests.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { LanguageComponent } from './components/language/language.component';
-import { ScrollTopComponent } from './components/scroll-top/scroll-top.component';
 import { MainWorkComponent } from './components/pages/work/main-work/main-work.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -42,7 +42,6 @@ import { DotNetComponent } from './components/pages/competences/dot-net/dot-net.
 import { PhpComponent } from './components/pages/competences/php/php.component';
 import { JavaScriptComponent } from './components/pages/competences/java-script/java-script.component';
 import { AngularComponent } from './components/pages/competences/angular/angular.component';
-import { ReactComponent } from './components/pages/competences/react/react.component';
 import { FigmaComponent } from './components/pages/competences/figma/figma.component';
 import { GitComponent } from './components/pages/competences/git/git.component';
 import { DockerComponent } from './components/pages/competences/docker/docker.component';
@@ -58,6 +57,19 @@ import { MongoDbComponent } from './components/pages/competences/mongo-db/mongo-
 import { CypressComponent } from './components/pages/competences/cypress/cypress.component';
 import { PostmanComponent } from './components/pages/competences/postman/postman.component';
 import { ProjectManagementToolComponent } from './components/pages/work/project-management-tool/project-management-tool.component';
+import { JunitComponent } from './components/pages/competences/junit/junit.component';
+import { CollaborationEquipeComponent } from './components/pages/competences/collaboration-equipe/collaboration-equipe.component';
+import { GestionTempsComponent } from './components/pages/competences/gestion-temps/gestion-temps.component';
+import { AdaptabiliteComponent } from './components/pages/competences/adaptabilite/adaptabilite.component';
+import { GeneralPresentationComponent } from './components/general-presentation/general-presentation.component';
+import { MyCVComponent } from './components/my-cv/my-cv.component';
+import { ValuesComponent } from './components/values/values.component';
+import { ProPersoProjectsComponent } from './components/pro-perso-projects/pro-perso-projects.component';
+import { QualitiesComponent } from './components/qualities/qualities.component';
+import { MySkillsComponent } from './components/pages/my-skills/my-skills.component';
+import { BackgroundComponent } from './components/pages/background/background.component';
+import { ScrollTopComponent } from './components/scroll-top/scroll-top.component';
+import { ReactComponent } from './components/pages/competences/react/react.component';
 
 @NgModule({
   declarations: [
@@ -105,6 +117,17 @@ import { ProjectManagementToolComponent } from './components/pages/work/project-
     CypressComponent,
     PostmanComponent,
     ProjectManagementToolComponent,
+    JunitComponent,
+    CollaborationEquipeComponent,
+    GestionTempsComponent,
+    AdaptabiliteComponent,
+    GeneralPresentationComponent,
+    MyCVComponent,
+    ValuesComponent,
+    ProPersoProjectsComponent,
+    QualitiesComponent,
+    BackgroundComponent,
+    MySkillsComponent,
   ],
   imports: [
     BrowserModule,

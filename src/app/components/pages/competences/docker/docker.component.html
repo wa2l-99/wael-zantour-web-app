@@ -1,1 +1,478 @@
-<p>docker works!</p>
+<main class="main-wrapper">
+    <!-- Page Title -->
+    <div class="page-title">
+        <div class="heading pb-3">
+            <div class="container">
+                <p style="text-align: center;">
+                    <img style="width: 10%;" src="assets/img/docker.png" alt="">
+                </p>
+                <div class="text-title">
+                    <h2 class="text-muted opacity-1 text-uppercase mb-0">
+                        Docker
+                    </h2>
+                </div>
+                <div class="hero__scroll">
+                    <div class="hero__scroll-down"></div>
+                </div>
+            </div>
+        </div>
+
+        <hr />
+    </div>
+    <!-- End Page Title -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="resume-card">
+                <p><strong>Niveau :</strong> ⭐⭐⭐☆☆ (intermédiaire)</p>
+                <p><strong>Années d’expérience :</strong> 1+</p>
+            </div>
+            <div class="aperçu">
+                <div class="section-sous-title pb-3">
+                    <h2>DESCRIPTION</h2>
+                    <div><span>Présentation générale de la technologie de conteneurisation</span></div>
+                </div>
+
+                <p class="justify">
+                    <strong>Docker</strong> est une plateforme open source de <strong>conteneurisation</strong>
+                    qui permet d’emballer, de distribuer et d’exécuter des applications dans des environnements
+                    légers, isolés et reproductibles appelés <strong>conteneurs</strong>.
+                    Contrairement à la virtualisation traditionnelle, Docker ne crée pas de machines virtuelles
+                    complètes :
+                    il s’appuie sur le noyau du système hôte pour exécuter plusieurs services indépendants,
+                    tout en garantissant une <strong>isolation des processus</strong> et une <strong>consommation
+                        minimale de ressources</strong>.
+                </p>
+
+                <p class="justify">
+                    Le rôle principal de Docker est d’assurer la <strong>portabilité</strong> et la
+                    <strong>cohérence des environnements applicatifs</strong> entre les différentes étapes du cycle de
+                    développement :
+                    développement local, intégration, test et production.
+                    En encapsulant chaque application avec ses dépendances, bibliothèques et configurations,
+                    Docker élimine les problèmes liés aux différences d’environnement
+                    (“<em>ça marche sur ma machine</em>”) et simplifie considérablement le déploiement.
+                </p>
+
+                <p class="justify">
+                    Dans les projets modernes, Docker occupe une place centrale dans les pratiques
+                    <strong>DevOps</strong>
+                    et les pipelines d’<strong>intégration continue</strong> (CI/CD).
+                    Il permet aux équipes de développement et d’exploitation de travailler sur des environnements
+                    uniformes,
+                    automatisés et facilement reproductibles.
+                    Couplé à des orchestrateurs comme <strong>Kubernetes</strong> ou <strong>Docker Swarm</strong>,
+                    il facilite le déploiement et la mise à l’échelle d’applications distribuées dans des environnements
+                    cloud ou hybrides.
+                </p>
+
+                <p class="justify">
+                    J’ai découvert Docker au cours de mon <strong>Master Expert en Ingénierie Logicielle</strong> à
+                    l’<strong>ISCOD</strong>,
+                    lors de projets académiques impliquant la création de microservices et de bases de données
+                    conteneurisées.
+                    J’ai rapidement adopté cette technologie pour gérer les dépendances, isoler les environnements de
+                    développement
+                    et déployer des architectures multi-services plus facilement.
+                    Elle m’a permis d’expérimenter concrètement la philosophie <strong>“Build once, run
+                        anywhere”</strong>.
+                </p>
+
+                <p class="justify">
+                    Dans mon activité actuelle chez <strong>Dekra Automotive Solutions</strong>,
+                    bien que les environnements de production reposent sur des solutions cloud internes,
+                    les principes issus de Docker — <strong>isolation des services</strong>,
+                    <strong>modularité</strong> et <strong>portabilité</strong> — guident ma façon de concevoir et de
+                    livrer
+                    des applications fiables et maintenables.
+                    Ils me permettent d’assurer une meilleure homogénéité entre les environnements de développement et
+                    de test,
+                    tout en améliorant la stabilité du code livré.
+                </p>
+
+                <p class="justify">
+                    Aujourd’hui, Docker est devenu un standard incontournable dans l’écosystème du développement
+                    logiciel.
+                    Adopté par des entreprises telles que <strong>Netflix</strong>, <strong>Spotify</strong>,
+                    <strong>Adobe</strong> ou
+                    <strong>Airbnb</strong>, il s’impose comme une solution de référence pour le
+                    <strong>déploiement rapide</strong>, la <strong>scalabilité</strong> et la
+                    <strong>sécurisation des infrastructures applicatives</strong>.
+                    Il constitue un pilier essentiel du développement moderne et de ma pratique quotidienne en tant que
+                    <strong>développeur full stack</strong>.
+                </p>
+            </div>
+
+            <div class="aperçu mt-5">
+                <div class="section-sous-title pb-3">
+                    <h2>UTILISATION DÉTAILLÉE</h2>
+                    <div><span>Pratiques, outils et intégrations concrètes</span></div>
+                </div>
+
+                <p class="justify">
+                    Dans mes différents projets académiques, j’ai utilisé <strong>Docker</strong> comme un outil
+                    essentiel
+                    pour <strong>standardiser les environnements de développement</strong>,
+                    <strong>isoler les services applicatifs</strong> et <strong>simplifier le déploiement</strong>
+                    d’architectures multi-couches.
+                    Il me permet d’assurer une exécution homogène des applications sur tout type de machine,
+                    tout en facilitant la collaboration et la maintenance des projets.
+                </p>
+
+                <p class="justify">
+                    Mon approche repose sur la conception de <strong>Dockerfiles</strong> bien structurés,
+                    adaptés aux besoins spécifiques de chaque service applicatif.
+                    J’y applique des bonnes pratiques telles que le <strong>multi-stage build</strong>
+                    pour optimiser la taille des images,
+                    la configuration de <strong>volumes persistants</strong> pour la conservation des données,
+                    ainsi que la définition de <strong>réseaux Docker</strong> pour gérer la communication entre
+                    conteneurs.
+                </p>
+
+                <p class="justify">
+                    Pour coordonner l’exécution de plusieurs conteneurs, j’utilise <strong>Docker Compose</strong>,
+                    qui me permet de décrire l’ensemble de l’environnement dans un unique fichier
+                    <code>docker-compose.yml</code>.
+                    Cette méthode est particulièrement utile pour les architectures modulaires,
+                    comme celles du projet
+                    <a routerLink="/work/medHeadPOC-project"><strong>MedHead Proof of Concept</strong></a>,
+                    où plusieurs microservices interagissent avec <strong>PostgreSQL</strong> et
+                    <strong>MongoDB</strong>.
+                </p>
+
+                <p class="justify">
+                    Dans d’autres projets, tels que
+                    <a routerLink="/work/project-management-tool"><strong>MPMT</strong></a>,
+                    Docker m’a permis d’automatiser entièrement la mise en place de l’environnement
+                    de développement et de test.
+                    En isolant les modules (API, base de données, front-end) dans des conteneurs indépendants,
+                    j’ai pu garantir la cohérence du système et accélérer les cycles de validation.
+                </p>
+
+                <p class="justify">
+                    J’intègre également Docker dans des processus d’<strong>intégration continue</strong>
+                    afin de créer des environnements éphémères pour les tests automatisés.
+                    Chaque modification de code peut ainsi être validée dans un conteneur isolé
+                    avant d’être fusionnée, garantissant la stabilité et la fiabilité du projet.
+                </p>
+
+                <p class="justify">
+                    Enfin, Docker me sert d’outil de <strong>prototypage rapide</strong> :
+                    il me permet de déployer des environnements complets en quelques secondes
+                    et de tester de nouvelles technologies (PostgreSQL, Redis, RabbitMQ)
+                    sans impacter les projets en cours.
+                    Cette flexibilité en fait un atout majeur dans ma pratique du développement full stack.
+                </p>
+
+                <p class="justify">
+                    Aujourd’hui, Docker représente pour moi un <strong>socle d’uniformisation</strong>
+                    et un <strong>levier d’efficacité</strong> dans le développement moderne.
+                    Il structure ma manière de concevoir, tester et livrer les applications,
+                    tout en assurant une continuité fluide entre les environnements de développement,
+                    de test et de production.
+                </p>
+            </div>
+
+            <div class="aperçu mt-5">
+                <div class="section-sous-title pb-3">
+                    <h2>ANECDOTES ET EXPÉRIENCES CONCRÈTES</h2>
+                    <div><span>Résolution de problèmes techniques dans un cadre académique</span></div>
+                </div>
+
+                <!-- Anecdote 1 -->
+                <h4 style="color: #f6bb67">1. Stabilisation d’un environnement multi-services avec Docker dans le projet
+                    MedHead PoC</h4>
+                <p class="justify">
+                    Dans le cadre de mon <strong>Master 2 Expert en Ingénierie Logicielle</strong> à
+                    l’<strong>ISCOD</strong>,
+                    j’ai développé le projet
+                    <a routerLink="/work/medHeadPOC-project"><strong>MedHead Proof of Concept</strong></a>,
+                    une application distribuée visant à optimiser la gestion des ressources hospitalières.
+                    Le principal défi concernait la <strong>multiplicité des services</strong> :
+                    API, bases de données, microservices et interface web,
+                    chacun nécessitant une configuration différente sur chaque poste de développement.
+                </p>
+
+                <p class="justify">
+                    Pour résoudre ces problèmes d’incohérence et de compatibilité,
+                    j’ai mis en place une architecture basée sur <strong>Docker</strong>.
+                    J’ai conçu des <strong>Docker images personnalisées</strong> pour chaque microservice Spring Boot,
+                    intégrant les dépendances nécessaires et optimisées via des <strong>multi-stage builds</strong>
+                    afin de réduire leur taille.
+                    L’orchestration complète a été gérée avec <strong>Docker Compose</strong>,
+                    permettant le démarrage automatique et coordonné des services.
+                </p>
+
+                <p class="justify">
+                    J’ai également configuré des <strong>healthchecks</strong> pour vérifier la disponibilité de chaque
+                    service,
+                    ainsi qu’un <strong>réseau interne Docker</strong> garantissant une communication fluide
+                    entre les conteneurs.
+                    Ces optimisations ont permis d’obtenir un environnement de développement
+                    <strong>stabilisé, reproductible et portable</strong>, utilisable sur n’importe quel poste
+                    sans intervention manuelle.
+                </p>
+
+                <p class="justify">
+                    Le résultat a été une exécution fluide du système complet en une seule commande,
+                    avec une forte réduction des erreurs liées à la configuration locale.
+                    Cette expérience m’a permis de consolider ma compréhension de la
+                    <strong>construction et de la gestion d’images Docker</strong>,
+                    tout en expérimentant les bonnes pratiques de l’orchestration multi-services.
+                </p>
+
+                <!-- Anecdote 2 -->
+                <h4 style="color: #f6bb67">2. Automatisation du déploiement et création d’images Docker pour le projet
+                    MPMT</h4>
+                <p class="justify">
+                    Lors du développement du projet
+                    <a routerLink="/work/project-management-tool"><strong>MPMT – Multi-Project Management
+                            Tool</strong></a>,
+                    j’ai été confronté à un problème d’<strong>environnement de développement lourd et difficile à
+                        reproduire</strong>.
+                    Chaque membre de l’équipe devait installer manuellement la base de données,
+                    l’API et l’interface front-end, ce qui entraînait des écarts de comportement
+                    entre les postes et rallongeait les phases de test.
+                </p>
+
+                <p class="justify">
+                    Pour résoudre ce problème, j’ai conçu plusieurs <strong>Docker images personnalisées</strong>
+                    pour les différents modules :
+                    - une image pour le back-end <strong>Spring Boot</strong>,
+                    - une pour la base <strong>PostgreSQL</strong> avec jeu de données initial,
+                    - et une pour le front-end <strong>Angular</strong> compilé en production.
+                    Ces images étaient orchestrées à l’aide d’un fichier <strong>docker-compose.yml</strong>,
+                    assurant la synchronisation entre les services et la persistance des données via des
+                    <strong>volumes</strong>.
+                </p>
+
+                <p class="justify">
+                    Cette automatisation a permis de réduire le temps de mise en place du projet
+                    et d’éliminer les erreurs liées aux dépendances locales.
+                    En quelques secondes, l’ensemble de la plateforme pouvait être exécuté
+                    dans un environnement <strong>identique, propre et isolé</strong>.
+                    Ce processus a également facilité les démonstrations et la livraison du projet final.
+                </p>
+
+            </div>
+            <div class="aperçu mt-5">
+                <div class="section-sous-title pb-3">
+                    <h2>NIVEAU DE MAÎTRISE ET CONTEXTUALISATION</h2>
+                    <div><span>Positionnement, progression et recul professionnel</span></div>
+                </div>
+
+                <p class="justify">
+                    Mon niveau actuel sur <strong>Docker</strong> est celui d’un <strong>utilisateur
+                        intermédiaire</strong>,
+                    acquis au cours de ma dernière année de <strong>Master Expert en Ingénierie Logicielle</strong> à
+                    l’<strong>ISCOD</strong>.
+                    Bien que cette compétence ait été développée dans un <strong>cadre académique</strong>,
+                    elle a été appliquée à des projets complets simulant des environnements professionnels,
+                    notamment <strong>MedHead PoC</strong> et
+                    <strong>MPMT</strong>.
+                </p>
+
+                <p class="justify">
+                    J’ai appris à concevoir et configurer des <strong>environnements conteneurisés</strong> complets,
+                    comprenant des bases de données, des APIs et des interfaces front-end.
+                    Cette mise en pratique m’a permis de comprendre la logique du <strong>déploiement
+                        modulaire</strong>,
+                    l’importance de la <strong>reproductibilité</strong> des environnements,
+                    et les avantages de l’<strong>isolation applicative</strong> dans les projets collaboratifs.
+                </p>
+
+                <p class="justify">
+                    Ma maîtrise couvre la <strong>création d’images Docker personnalisées</strong>,
+                    la configuration de <strong>volumes et réseaux</strong>,
+                    ainsi que l’orchestration via <strong>Docker Compose</strong>.
+                    Ces compétences me permettent de reproduire facilement un environnement complet,
+                    quel que soit le poste ou le système utilisé.
+                </p>
+
+                <p class="justify">
+                    Ma <strong>marge de progression</strong> se situe sur des aspects plus avancés,
+                    tels que l’<strong>optimisation des images</strong>, la <strong>sécurité des conteneurs</strong>
+                    et l’<strong>orchestration à grande échelle</strong> avec <strong>Kubernetes</strong>.
+                    Ces sujets représentent les prochaines étapes de mon perfectionnement technique.
+                </p>
+
+                <p class="justify">
+                    Bien que je n’aie pas encore utilisé Docker dans un contexte professionnel chez <strong>Dekra
+                        Automotive Solutions</strong>,
+                    cette compétence complète parfaitement mon profil de <strong>développeur full stack</strong>.
+                    Elle s’intègre naturellement à mes autres expertises — <strong>PostgreSQL</strong>,
+                    <strong>MySQL</strong>,
+                    <strong>Spring Boot</strong> et <strong>Angular</strong> — en renforçant la cohérence et la
+                    portabilité
+                    de mes environnements applicatifs.
+                </p>
+
+                <p class="justify">
+                    Avec le recul, Docker s’impose pour moi comme un <strong>outil d’apprentissage structurant</strong>
+                    :
+                    il m’a permis de mieux comprendre la logique du déploiement, la séparation des services et la
+                    portabilité logicielle.
+                    Je recommande à tout développeur en formation d’y recourir dès ses premiers projets pour acquérir
+                    une vision concrète de l’<strong>Infrastructure as Code</strong> et de la <strong>gestion de cycle
+                        de vie applicatif</strong>.
+                </p>
+            </div>
+            <div class="aperçu mt-5">
+                <div class="section-sous-title pb-3">
+                    <h2>⚡ VITESSE D’ACQUISITION</h2>
+                    <div><span>Apprentissage progressif et renforcement par la pratique</span></div>
+                </div>
+
+                <p class="justify">
+                    L’apprentissage de <strong>Docker</strong> s’est fait de manière progressive au cours de cette
+                    année,
+                    à travers les projets de mon <strong>Master en Ingénierie Logicielle</strong>.
+                    Bien que je n’aie pas encore atteint une maîtrise complète de l’outil,
+                    j’ai acquis une <strong>base solide</strong> qui me permet aujourd’hui de comprendre
+                    et d’appliquer les principes fondamentaux de la conteneurisation.
+                </p>
+
+                <p class="justify">
+                    Cette montée en compétence s’est appuyée sur une <strong>pratique régulière</strong> dans des
+                    contextes concrets
+                    — création d’environnements multi-services, orchestration avec Docker Compose, et déploiement
+                    d’applications web conteneurisées —
+                    ainsi que sur un apprentissage structuré via des <strong>formations en ligne</strong>,
+                    notamment celles de la plateforme <strong>Visuplus</strong> et d’autres ressources spécialisées.
+                </p>
+
+                <p class="justify">
+                    Ces expériences m’ont permis d’assimiler les concepts clés rapidement :
+                    la gestion des images, la configuration des volumes, la communication entre services
+                    et la logique de déploiement reproductible.
+                    Je continue à renforcer cette base en explorant les bonnes pratiques de sécurité,
+                    d’optimisation et d’automatisation propres à Docker.
+                </p>
+
+                <p class="justify">
+                    Cette phase d’apprentissage, bien que récente, m’a permis d’intégrer Docker dans ma vision globale
+                    du développement logiciel,
+                    en comprenant son rôle stratégique dans la cohérence et la portabilité des applications modernes.
+                </p>
+            </div>
+            <div class="aperçu mt-5">
+                <div class="section-sous-title pb-3">
+                    <h2>IMPORTANCE POUR MON PROFIL</h2>
+                    <div><span>Un levier essentiel dans ma compréhension du cycle DevOps</span></div>
+                </div>
+
+                <p class="justify">
+                    Même si je n’utilise pas directement <strong>Docker</strong> dans mes tâches actuelles
+                    chez <strong>Dekra Automotive Solutions</strong>,
+                    cette compétence occupe une place importante dans mon profil d’<strong>ingénieur en développement
+                        logiciel</strong>.
+                    Elle m’offre une compréhension concrète des principes de la <strong>chaîne DevOps</strong>,
+                    de la <strong>mise en production</strong> et du <strong>déploiement automatisé</strong>
+                    d’applications.
+                </p>
+
+                <p class="justify">
+                    Grâce à mes connaissances de Docker, je peux dialoguer efficacement avec les équipes
+                    d’infrastructure
+                    ou d’exploitation lorsque des décisions techniques concernent la conteneurisation ou la mise en
+                    place
+                    d’environnements isolés.
+                    Cette vision transversale me permet de mieux anticiper les contraintes liées au déploiement,
+                    à la portabilité et à la maintenance des applications que je conçois.
+                </p>
+
+                <p class="justify">
+                    Cette maîtrise conceptuelle est particulièrement utile lors des discussions de conception technique
+                    :
+                    je peux proposer ou évaluer la mise en place de conteneurs pour isoler des services,
+                    simuler des environnements ou optimiser le cycle de déploiement.
+                    Même sans en assurer l’implémentation directe,
+                    je comprends les enjeux et les bonnes pratiques associées à une architecture conteneurisée.
+                </p>
+
+                <p class="justify">
+                    À moyen terme, je souhaite consolider cette compétence en l’appliquant à des projets concrets
+                    et en explorant les outils d’orchestration tels que <strong>Kubernetes</strong>.
+                    Cette évolution s’inscrit dans ma volonté de renforcer la cohérence entre
+                    mes compétences de développement et la dimension <strong>infrastructure et déploiement</strong>
+                    du métier d’ingénieur logiciel.
+                </p>
+            </div>
+            <div class="aperçu mt-5">
+                <div class="section-sous-title pb-3">
+                    <h2>CONSEILS D’EXPÉRIENCE</h2>
+                    <div><span>Bonnes pratiques issues de la mise en œuvre</span></div>
+                </div>
+
+                <p class="justify">
+                    Mon expérience avec <strong>Docker</strong> m’a appris que la clé d’un environnement fiable
+                    réside dans une configuration simple et bien documentée.
+                    Je recommande de construire des images légères, d’éviter la complexité inutile
+                    et de toujours versionner les fichiers <code>Dockerfile</code> et
+                    <code>docker-compose.yml</code> pour garantir la traçabilité.
+                </p>
+
+                <p class="justify">
+                    Pour bien progresser, il est préférable de commencer par des déploiements unitaires
+                    avant d’aborder les architectures multi-conteneurs.
+                    Cette approche progressive aide à comprendre les bases — réseaux, volumes, dépendances —
+                    tout en développant de bonnes habitudes de travail collaboratif proches des pratiques
+                    <strong>DevOps</strong>.
+                </p>
+            </div>
+            <div class="aperçu mt-5">
+                <div class="section-sous-title pb-3">
+                    <h2>RESSOURCES ET VEILLE TECHNIQUE</h2>
+                    <div><span>Outils et références pour approfondir Docker</span></div>
+                </div>
+
+                <p class="justify">
+                    Pour maintenir mes connaissances à jour sur <strong>Docker</strong> et ses évolutions,
+                    je m’appuie sur la <a href="https://docs.docker.com/" target="_blank" style="color:#f6bb67;">
+                        <strong>documentation officielle Docker</strong></a>,
+                    qui constitue une référence complète sur la configuration, la sécurité et les bonnes pratiques de
+                    conteneurisation.
+                </p>
+
+                <p class="justify">
+                    Je recommande également le tutoriel vidéo de Ali Bouali :
+                    <a href="https://www.youtube.com/watch?v=LNL0h66FXu0" target="_blank" style="color:#f6bb67;">
+                        <strong>Docker Tutorial for Beginners | [In 2 Hours]</strong>
+                    </a>,
+                    qui offre une introduction complète à la conteneurisation et à l’orchestration avec Docker.
+                    Il m’a permis d’affiner ma méthode de configuration et de déploiement dans un contexte académique.
+                </p>
+            </div>
+
+            <div class="aperçu mt-5">
+                <div class="container pt-3">
+                    <div class="header_line_gradient"></div>
+                    <p class="text-xl text-center pt-3 pb-2" style="color: #f6bb67;">
+                        Projets associés à <strong>Docker</strong>
+                    </p>
+
+                    <div class="action-git pt-3"
+                        style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
+
+                        <a routerLink="/work/medHeadPOC-project" target="_blank" class="git-btn">
+                            <div class="git-btn-text">
+                                MedHead PoC – Application distribuée avec Docker, PostgreSQL & MongoDB
+                            </div>
+                        </a>
+
+                        <a routerLink="/work/project-management-tool" target="_blank" class="git-btn">
+                            <div class="git-btn-text">
+                                MPMT – Multi-Project Management Tool avec Docker & Spring Boot
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+</main>
+<app-scroll-top></app-scroll-top>

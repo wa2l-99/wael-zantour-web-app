@@ -24,118 +24,26 @@
 
   <!-- About Section -->
   <section id="about" class="about section">
-    <div class="container">
-      <div class="row gy-4 justify-content-center">
-        <div class="col-lg-4">
-          <img
-            src="assets/img/My_IMG_black&white.png"
-            class="img-center"
-            alt=""
-          />
-        </div>
-        <div class="col-lg-8 content">
-          <h2>Expert en ingénierie logicielle – Développeur Full Stack 💻</h2>
-          <p class="py-3">
-            En route vers l'obtention de mon diplôme en Master 2 MASTÈRE EXPERT
-            EN INGÉNIERIE LOGICIELLE à l'ISCOD, je suis actuellement en
-            alternance chez Dekra Automotive Solutions en tant que développeur
-            IT. Passionné par la technologie et le développement d'applications,
-            je m'épanouis dans un environnement dynamique où je perfectionne mes
-            compétences tout en contribuant à des projets d'envergure.
-          </p>
-          <div class="row">
-            <div class="col-lg-6">
-              <ul>
-                <li>
-                  <i class="fa fa-chevron-right"></i>
-                  <strong>Date de naissance:</strong> <span>1 Avril 1999</span>
-                </li>
-                <li>
-                  <i class="fa fa-chevron-right"></i>
-                  <strong>Téléphone :</strong>
-                  <span>+33602487721</span>
-                </li>
-                <li>
-                  <i class="fa fa-chevron-right"></i> <strong>Ville :</strong>
-                  <span>Bordeaux, FRANCE</span>
-                </li>
-              </ul>
-            </div>
-            <div class="col-lg-6">
-              <ul>
-                <li>
-                  <i class="fa fa-chevron-right"></i> <strong>Age:</strong>
-                  <span>25</span>
-                </li>
-                <li>
-                  <i class="fa fa-chevron-right"></i> <strong>Diplôme:</strong>
-                  <span>Master</span>
-                </li>
-                <li>
-                  <i class="fa fa-chevron-right"></i> <strong>Email:</strong>
-                  <span>waelzantour1&#64;gmail.com</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <p class="py-3">
-            Rigoureux et motivé, je suis toujours à prêt à relever de nouveaux
-            défis pour innover et perfectionner mes compétences.
-          </p>
-        </div>
-      </div>
-    </div>
+    <app-general-presentation></app-general-presentation>
+    <app-values></app-values>
   </section>
   <!-- /About Section -->
 
-  <div class="container">
-    <!-- Cv Section -->
-    <div class="section-title mb-5">
-      <h2>Mon CV</h2>
-    </div>
-    <!-- Onglets de navigation -->
-    <nav
-      ngbNav
-      #nav="ngbNav"
-      class="nav-pills rn-nav-list"
-      [(activeId)]="activeTab"
-    >
-      <ng-container [ngbNavItem]="0">
-        <button ngbNavLink>Diplomes & Formations</button>
-        <ng-template ngbNavContent>
-          <section id="education" class="education section pb-2">
-            <app-education></app-education>
-          </section>
-        </ng-template>
-      </ng-container>
+  <!-- Project pro and perso Section -->
+  <section id="about" class="about section pt-1 ">
+    <app-pro-perso-projects></app-pro-perso-projects>
+  </section>
+  <!-- /Project pro and perso Section -->
 
-      <ng-container [ngbNavItem]="1">
-        <button ngbNavLink>Expérience professionnelle</button>
-        <ng-template ngbNavContent>
-          <section id="experience" class="experiences section pb-2">
-            <app-experience></app-experience>
-          </section>
-        </ng-template>
-      </ng-container>
 
-      <ng-container [ngbNavItem]="2">
-        <button ngbNavLink>Compétences</button>
-        <ng-template ngbNavContent>
-          <section id="skills" class="skills section pb-2">
-            <app-skills></app-skills>
-          </section>
-        </ng-template>
-      </ng-container>
-    </nav>
+  <!-- Qualities Section -->
+  <section id="about" class="about section pt-1 ">
+    <app-qualities></app-qualities>
+  </section>
+  <!-- /Qualities Section -->
 
-    <!-- Contenu de l'onglet sélectionné -->
-    <div [ngbNavOutlet]="nav"></div>
-  </div>
-
-  <!-- /Cv Section -->
-
-  <!-- /interests Section -->
-  <section id="interests" class="interests section">
+  <!-- interests Section -->
+  <section id="interests" class="interests section pt-1">
     <app-interests></app-interests>
   </section>
   <!-- /interests Section -->

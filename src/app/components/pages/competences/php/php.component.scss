@@ -1,0 +1,31 @@
+.text-title {
+  h2 {
+    font-size: 70px;
+  }
+}
+.section-sous-title span {
+  color: #787cb4;
+}
+
+li {
+  font-size: 21px;
+}
+
+.action-git .git-btn .git-btn-text {
+  font-size: 1.25rem;
+}
+
+.text-muted {
+  --bs-text-opacity: 1;
+  color: rgb(116 116 116 / 75%) !important;
+}
+
+.project-title:hover {
+  color: #f6bb67;
+  text-shadow: 0 1px 12px rgba(249, 220, 133, 0.855);
+  border-color: #f6bb67;
+  border-radius: 0%;
+  text-decoration: underline var(--bs-border-color);
+  background-color: unset;
+  cursor: pointer;
+}

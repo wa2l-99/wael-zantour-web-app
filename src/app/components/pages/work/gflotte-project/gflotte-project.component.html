@@ -70,18 +70,64 @@
         <div class="col border-col">
           <div class="border-white"></div>
           <div class="pt-3">
-            <h5>Technologies utilisées</h5>
+            <h5>Compétences Techniques</h5>
             <div class="row g-2">
               <div class="col-auto">
                 <div class="skill-project2">
-                  <span>React.js </span>
+                  <a [routerLink]="['/react']">React.js </a>
                 </div>
               </div>
               <div class="col-auto">
                 <div class="skill-project2">
-                  <span>JavaScript</span>
+                  <a [routerLink]="['/javaScript']">JavaScript</a>
                 </div>
               </div>
+              <div class="col-auto">
+                <div class="skill-project2">
+                  <a [routerLink]="['/git']">Git</a>
+                </div>
+              </div>
+              <div class="col-auto">
+                <div class="skill-project2">
+                  <a [routerLink]="['/scrum']">Scrum</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col border-col">
+          <div class="border-white"></div>
+          <div class="pt-3">
+            <h5>Compétences Transversales</h5>
+            <div class="row g-2">
+              <div class="col-auto">
+                <div class="skill-project2">
+                  <a [routerLink]="['/gestion-temps']">Gestion du temps</a>
+                </div>
+              </div>
+              <div class="col-auto">
+                <div class="skill-project2">
+                  <a [routerLink]="['/collaboration-equipe']">Collaboration en équipe</a>
+                </div>
+              </div>
+              <div class="col-auto">
+                <div class="skill-project2">
+                  <a [routerLink]="['/problem-resolution']">Résolution des problèmes</a>
+                </div>
+              </div>
+              <div class="col-auto">
+                <div class="skill-project2">
+                  <a [routerLink]="['/agilite']">Agilité</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col border-col">
+          <div class="border-white"></div>
+          <div class="pt-3">
+            <h5>Technologies Complémentaires</h5>
+            <div class="row g-2">
               <div class="col-auto">
                 <div class="skill-project2">
                   <span>Bootstrap</span>
@@ -102,55 +148,14 @@
                   <span>MongoDB</span>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="col border-col">
-          <div class="border-white"></div>
-          <div class="pt-3">
-            <h5>Compétences mobilisées</h5>
-            <div class="row g-2">
               <div class="col-auto">
                 <div class="skill-project2">
-                  <span>Gestion du temps</span>
-                </div>
-              </div>
-              <div class="col-auto">
-                <div class="skill-project2">
-                  <span>Collaboration en équipe</span>
-                </div>
-              </div>
-              <div class="col-auto">
-                <div class="skill-project2">
-                  <span>Résolution des problèmes</span>
-                </div>
-              </div>
-              <div class="col-auto">
-                <div class="skill-project2">
-                  <span>Agilité</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col border-col">
-          <div class="border-white"></div>
-          <div class="pt-3">
-            <h5>Outils</h5>
-            <div class="row g-2">
-              <div class="col-auto">
-                <div class="skill-project2">
-                  <span>Git</span>
+                  <span>Balsamiq Wireframes</span>
                 </div>
               </div>
               <div class="col-auto">
                 <div class="skill-project2">
                   <span>Postman</span>
-                </div>
-              </div>
-              <div class="col-auto">
-                <div class="skill-project2">
-                  <span>Balsamiq Wireframes</span>
                 </div>
               </div>
             </div>
@@ -160,7 +165,7 @@
           <div class="border-white"></div>
           <div class="pt-3">
             <h5>Rôle</h5>
-            <p >– Conception de l'Architecture</p>
+            <p>– Conception de l'Architecture</p>
             <p class="justify">– Maquettage UX</p>
             <p class="justify">– Développement Front-end</p>
             <p class="justify">– Développement back-end</p>
@@ -476,8 +481,7 @@
                 <!-- End interface Item -->
                 <div class="col-auto interface-item isotope-item">
                   <div class="interface-content h-100">
-                    <img #imageElement3 src="assets/img/gflotte-project/createUser-prot.png" class="img-fluid"
-                      alt="" />
+                    <img #imageElement3 src="assets/img/gflotte-project/createUser-prot.png" class="img-fluid" alt="" />
                     <div class="interface-info">
                       <h4 style="color: #f6bb67">Prototypage</h4>
                       <p class="justify">Interface créer utilisateurs pour administrateur</p>
@@ -553,7 +557,8 @@
         <ul>
           <li class="justify"><strong>Backend</strong> : Développé en <strong>Node.js</strong> avec
             <strong>Express.js</strong>,
-            assurant un traitement efficace des requêtes et une gestion performante des API REST.</li>
+            assurant un traitement efficace des requêtes et une gestion performante des API REST.
+          </li>
           <li class="justify"><strong>Frontend</strong> : Conçu avec <strong>React.js</strong>, permettant une interface
             utilisateur
             dynamique et modulaire, facilitant l’interactivité et la gestion des états.</li>
