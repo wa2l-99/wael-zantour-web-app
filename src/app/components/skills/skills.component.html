@@ -99,14 +99,6 @@
           </ngb-progressbar>
         </div>
       </div>
-      <div class="progress">
-        <a class="skill" [routerLink]="['/scrum']">Méthodologies Scrum</a><small class="level">Niveau avancé</small>
-        <div class="progress-bar-wrap">
-          <ngb-progressbar class="mb-3" [value]="70" [style.width]="getProgressWidth(70)">
-            <span class="percent-label">70%</span>
-          </ngb-progressbar>
-        </div>
-      </div>
 
       <div class="progress">
         <a class="skill" [routerLink]="['/docker']">Docker </a><small class="level">Niveau débutant</small>
@@ -121,15 +113,6 @@
   <h4 class="maintitle mt-5">Compétences Comportementales ✨</h4>
   <div class="row skills-content skills-animation">
     <div class="col-lg-6">
-      <div class="progress">
-        <a class="skill" [routerLink]="['/agilite']">Agilité</a><small class="level">Niveau avancé</small>
-        <div class="progress-bar-wrap">
-          <ngb-progressbar class="mb-3 progress-bar-animated" [value]="70" [style.width]="getProgressWidth(70)">
-            <span class="percent-label">70%</span>
-          </ngb-progressbar>
-        </div>
-      </div>
-
       <div class="progress">
         <a class="skill" [routerLink]="['/adaptabilite']">Adaptabilité</a><small class="level">Niveau
           intermédiaire</small>
@@ -167,6 +150,31 @@
         <div class="progress-bar-wrap">
           <ngb-progressbar class="mb-3 progress-bar-animated" [value]="50" [style.width]="getProgressWidth(50)">
             <span class="percent-label">50%</span>
+          </ngb-progressbar>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h4 class="maintitle mt-5">Compétences Méthodologiques ✨</h4>
+  <div class="row skills-content skills-animation">
+    <div class="col-lg-6">
+      <div class="progress">
+        <a class="skill" [routerLink]="['/agilite']">Agilité</a><small class="level">Niveau avancé</small>
+        <div class="progress-bar-wrap">
+          <ngb-progressbar class="mb-3 progress-bar-animated" [value]="70" [style.width]="getProgressWidth(70)">
+            <span class="percent-label">70%</span>
+          </ngb-progressbar>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-lg-6">
+
+      <div class="progress">
+        <a class="skill" [routerLink]="['/scrum']">Méthodologies Scrum</a><small class="level">Niveau avancé</small>
+        <div class="progress-bar-wrap">
+          <ngb-progressbar class="mb-3" [value]="70" [style.width]="getProgressWidth(70)">
+            <span class="percent-label">70%</span>
           </ngb-progressbar>
         </div>
       </div>
