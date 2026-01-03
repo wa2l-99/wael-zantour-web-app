@@ -88,10 +88,10 @@
     > li {
       padding: 0 20px;
       @include down-sm {
-        padding: 8px 0;
+        padding: 0px 0;
       }
       a {
-        padding: 8px 0;
+        padding: 0px 0;
         text-transform: uppercase;
         color: var(--px-white);
         font-size: 16px;

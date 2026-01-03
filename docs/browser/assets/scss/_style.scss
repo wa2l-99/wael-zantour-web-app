@@ -674,6 +674,18 @@ a:hover {
   font-weight: 600;
   opacity: 0.9;
 }
+.skills .progress .skill:hover {
+  color: #fff;
+  text-shadow: 0 1px 12px rgba(255, 255, 255, 0.855);
+  border-color: var(--px-white);
+  border-radius: 0%;
+
+  text-decoration: underline var(--bs-border-color);
+  display: block;
+  background-color: unset;
+  cursor: pointer;
+}
+
 .skills .progress .level {
   color: var(--px-white);
   font-weight: 400;
@@ -1274,6 +1286,28 @@ span.subtitle {
   color: var(--px-white);
 }
 
+.interests .features-desc {
+  background: linear-gradient(to right bottom, #000000, #151515);
+  display: flex;
+  padding: 20px;
+  transition: 0.3s;
+  border: 1px solid color-mix(in srgb, var(--px-white), transparent 90%);
+  position: relative;
+}
+
+.interests .features-desc:hover {
+  border-color: var(--px-white);
+}
+
+.interests .features-desc:hover h3 {
+  color: var(--px-white);
+}
+
+.interests .interest-desc {
+  color: var(--px-white);
+  text-align: start !important;
+  font-size: medium !important;
+}
 /*--------------------------------------------------------------
 # language Section
 --------------------------------------------------------------*/
@@ -1577,7 +1611,36 @@ span.subtitle {
   transition: 0.4s;
   font-weight: 500;
 }
+.skill-project2 a {
+  color: var(--px-white);
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding: 0px 15px;
+  border: 1px solid #333;
+  height: 44px;
+  line-height: 36px;
+  border-radius: 6px;
+  box-shadow: 0px 1px 5px #1c1e22, 0px 1px 4px #262a2e;
+  transition: 0.4s;
+  font-weight: 500;
+}
 
+.skill-project2 a:hover {
+  color: var(--px-black);
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding: 0px 15px;
+  border: 1px solid #111111;
+  height: 44px;
+  line-height: 36px;
+  border-radius: 6px;
+  box-shadow: 0px 1px 5px #4a4b4e, 0px 1px 4px #4e4e4e;
+  transition: 0.4s;
+  font-weight: 500;
+  background-color: white;
+}
 .page-title .heading .text-title h5 {
   font-size: 2.25rem;
   font-weight: 600;
@@ -1795,4 +1858,25 @@ td {
   overflow: hidden;
   box-shadow: inset 0 0 80px -20px rgba(255, 255, 255, 0.3019607843);
   --bs-table-bg: #21252900 !important;
+}
+
+/*--------------------------------------------------------------
+# compétences Section
+--------------------------------------------------------------*/
+.resume-card {
+  background: #1f1f1f;
+  border-radius: 10px;
+  color: #f1f1f1;
+  text-align: center;
+  max-width: 600px;
+  padding: 1rem;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  margin-top: 1.5rem;
+  p {
+    margin: 0.3rem 0;
+  }
+}
+.justify {
+  text-align: justify;
 }
